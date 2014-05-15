@@ -2,8 +2,40 @@
 <html>
   <head>
     <title>0pen.us</title>
+    <style type="text/css">
+      body{
+        margin: 0;
+        font-family: sans-serif;
+      }
+
+      .contain{
+        width: 1024px;
+        position: absolute;
+        left: 50%;
+        margin-left: -512px;
+        text-align: center;
+      }
+
+      .textElement{
+        font-size: 1.2em;
+        margin: 0 32px 0 32px;
+      }
+    </style>
   </head>
   <body>
-    <img src="./0pen.jpg" alt="0pen">
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=766283993400613&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <div class="contain">
+      <img src="./0pen.jpg" alt="0pen">
+      <a href="https://www.facebook.com/groups/zer0pen/" target="_blank" class="textElement">Facebook</a>
+      <a href="https://github.com/zer0pen" target="_blank" class="textElement">Github</a>
+      <div class="fb-like" data-href="http://0pen.us" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+    </div>
   </body>
 </html>
