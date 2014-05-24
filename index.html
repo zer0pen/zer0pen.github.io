@@ -1,41 +1,88 @@
 <!doctype html>
 <html>
-  <head>
+	<head>
     <title>0pen.us</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <style type="text/css">
-      body{
-        margin: 0;
-        font-family: sans-serif;
-      }
+		body{
+			margin: 0;
+			font-family: sans-serif;
+		}
 
-      .contain{
-        width: 1024px;
-        position: absolute;
-        left: 50%;
-        margin-left: -512px;
-        text-align: center;
-      }
+		.contain{
+			width: 1024px;
+			position: absolute;
+			left: 50%;
+			margin-left: -512px;
+			text-align: center;
+		}
 
-      .textElement{
-        font-size: 1.2em;
-        margin: 0 32px 0 32px;
-      }
+		.textElement{
+			font-size: 1.2em;
+			margin: 0 32px 0 32px;
+		}
+		
+		.menubar{
+			position: fixed;
+			margin-top: 0px;
+			left: 50%;
+			margin-left: -512px;
+		}
     </style>
-  </head>
-  <body>
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=766283993400613&version=v2.0";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
-    <div class="contain">
-      <img src="./0pen.jpg" alt="0pen">
-      <a href="https://www.facebook.com/groups/zer0pen/" target="_blank" class="textElement">Facebook</a>
-      <a href="https://github.com/zer0pen" target="_blank" class="textElement">Github</a><br><br><br>
-      <div class="fb-like" data-href="http://0pen.us" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
-    </div>
-  </body>
+	</head>
+	
+	<body>
+		<div id="fb-root"></div>
+		<script>
+		(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=766283993400613&version=v2.0";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+		</script>
+		
+		<div class="contain" id="Logo">
+			<img src="./image/0pen.jpg" alt="0pen">
+			
+			<div id="About">
+				<p>
+					<h2>About Zer0pen</h2>
+					Zer0pen은 선린인터넷고등학교 게임동아리입니다.<br>
+					0pen은 오픈소스 개발을 지향한다는 점에서
+					Zer0는 컴퓨터 언어가 0과1로 구성되어 있다는 점에서 가져오게 되었습니다.<br>
+				</p>
+			</div>
+			
+			<div id="GetInTouch">
+				<p>
+					<h2>Get In Touch</h2><br>
+					<a href="https://www.facebook.com/zer0pen" target="_blank" class="textElement"><img src="./image/facebook.jpg"></a>
+					<a href="https://github.com/zer0pen" target="_blank" class="textElement"><img src="./image/github.jpg"></a><br><br><br>
+					<div class="fb-like" data-href="http://0pen.us" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+				</p>
+			</div>
+		</div>
+		
+		<div class="menubar" id="menu">
+			<!--
+			<img src="./image/menu_background.jpg">
+			-->
+		</div>
+		
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>		
+		<script type="text/javascript" src="jquery.easing.1.3.js"></script>
+		<script type="text/javascript">
+		//smooth scrolling
+		$(function() {
+			$("a").bind('click',function(event){
+				var $anchor = $(this);
+				$('html, body').stop().animate({
+					scrollTop: $($anchor.attr('href')).offset().top}, 1000, 'swing');
+					event.preventDefault();
+			});
+		});
+		</script>
+	</body>
 </html>
