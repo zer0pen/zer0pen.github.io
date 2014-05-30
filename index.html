@@ -3,6 +3,17 @@
 	<head>
     <title>0pen.us</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!--bootstrap-->
+	<link href="./bootstrap-3.1.1/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
     <style type="text/css">
 		body{
 			margin: 0;
@@ -10,10 +21,17 @@
 		}
 
 		.contain{
+			<!--
 			width: 1024px;
 			position: absolute;
 			left: 50%;
 			margin-left: -512px;
+			margin-left: -50%;
+			-->
+			position: absoulte;
+			margin-left: -50%;
+			left: 50%;
+			width: 100%;
 			text-align: center;
 		}
 
@@ -25,8 +43,23 @@
 		.menubar{
 			position: fixed;
 			margin-top: 0px;
+			margin-left: -50%;
 			left: 50%;
-			margin-left: -512px;
+			width: 100%;
+			height: 70px;
+			text-align: center;
+		}
+		
+		.menufont{
+			font-family: "Lucida Console", "Lucida Sans Typewriter", Monaco, "Bitstream Vera Sans Mono", monospace;
+			font-size: 20px;
+		}
+		
+		.scroll_to_top{
+			border-radius:50%;
+			position:fixed;
+			right:10%;
+			top:80%;
 		}
     </style>
 	</head>
@@ -44,15 +77,24 @@
 		</script>
 		
 		<div class="contain" id="Logo">
+			<br><br><br>
 			<img src="./image/0pen.jpg" alt="0pen">
 			
-			<div id="About">
+			<div id="About" style="background-color: #FFCC33">
 				<p>
-					<h2>About Zer0pen</h2>
+					<h2>About Zer0pen<br><br></h2>
 					Zer0pen은 선린인터넷고등학교 게임동아리입니다.<br>
 					0pen은 오픈소스 개발을 지향한다는 점에서
 					Zer0는 컴퓨터 언어가 0과1로 구성되어 있다는 점에서 가져오게 되었습니다.<br>
 				</p>
+				<br><br><br>
+				
+				<!--테스트용 <br> -->
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+				<!-- 여기까지 -->
 			</div>
 			
 			<div id="GetInTouch">
@@ -62,26 +104,45 @@
 					<a href="https://github.com/zer0pen" target="_blank" class="textElement"><img src="./image/github.jpg"></a><br><br><br>
 					<div class="fb-like" data-href="http://0pen.us" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
 				</p>
+				
+				<!--테스트용 <br> -->
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+				<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+				<!-- 여기까지 -->
 			</div>
 		</div>
 		
-		<div class="menubar" id="menu">
-			<!--
-			<img src="./image/menu_background.jpg">
-			-->
+		<a href="#Logo" id="scroll_up"><img src="./image/topbutton.jpg" class="scroll_to_top"></a>
+		
+		<div class="menubar" id="menu" style="background-image:url(./image/menu_background.jpg)">
+			<br>
+			<a href="#About" class="menufont">About</a>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="#GetInTouch" class="menufont">Get In Touch</a>
 		</div>
 		
+		<!-- smooth scrolling -->
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>		
 		<script type="text/javascript" src="jquery.easing.1.3.js"></script>
 		<script type="text/javascript">
-		//smooth scrolling
 		$(function() {
 			$("a").bind('click',function(event){
 				var $anchor = $(this);
 				$('html, body').stop().animate({
-					scrollTop: $($anchor.attr('href')).offset().top}, 1000, 'swing');
+					scrollTop: $($anchor.attr('href')).offset().top-70}, 1000, 'swing');
 					event.preventDefault();
 			});
+		});
+		
+		$(window).scroll(function() {
+			if ($(this).scrollTop()>0) {
+				$('.scroll_to_top').fadeIn();
+			}
+			else {
+				$('.scroll_to_top').fadeOut();
+			}
 		});
 		</script>
 	</body>
