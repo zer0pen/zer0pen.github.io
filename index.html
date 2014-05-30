@@ -3,7 +3,7 @@
 	<head>
     <title>0pen.us</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<!--bootstrap-->
 	<link href="./bootstrap-3.1.1/css/bootstrap.min.css" rel="stylesheet" media="screen">
@@ -136,6 +136,7 @@
 			});
 		});
 		
+		<!-- fade in/out 'scroll to top button' -->
 		$(window).scroll(function() {
 			if ($(this).scrollTop()>0) {
 				$('.scroll_to_top').fadeIn();
