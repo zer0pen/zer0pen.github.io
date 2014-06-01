@@ -13,6 +13,10 @@
   .top-imgbg-text-2{
     font-size: 1.8em;
   }
+  .content-field{
+    width: 60%;
+    left: 20%;
+  }
 }
 
 @media all and (max-width: 767px){
@@ -24,6 +28,10 @@
   }
   .top-imgbg-text-2{
     font-size: 1.5em;
+  }
+  .content-field{
+    width: 80%;
+    left: 10%;
   }
 }
 
@@ -51,9 +59,9 @@ body{
 .top-imgbg-text{
   position: relative;
   text-align: right;
-  top: 75%;
+  top: 70%;
   width: 50%;
-  left: 40%;
+  left: 38%;
   color: white;
   text-shadow: 0.2em 0.2em gray;
   font-weight: bold;
@@ -72,8 +80,6 @@ body{
 
 .content-field{
   position: relative;
-  width: 60%;
-  left: 20%;
   font-size: 1.5em;
 }
 

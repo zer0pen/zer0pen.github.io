@@ -1,5 +1,8 @@
 $(document).ready(function(){
-   var mSkrollr = skrollr.init();
+  if(!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera))
+  {
+    var mSkrollr = skrollr.init();
+  }
 
    var path = "url('./image/title/"+ Math.floor(Math.random()*10) + ".jpg')";
    $(".top-imgbg").css("background-image", path);
