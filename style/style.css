@@ -3,6 +3,18 @@
   src: url("../font/NanumGothic-Regular.ttf");
 }
 
+@media all and (min-width:768px){
+  .navi-content{
+    display: block;
+  }
+}
+
+@media all and (max-width: 767px){
+  .navi-content{
+    display: none;
+  }
+}
+
 body{
   margin: 0;
   font-family: "NanumGothic", sans-serif;
