@@ -7,11 +7,23 @@
   .navi-content{
     display: block;
   }
+  .top-imgbg-text-1{
+    font-size: 4em;
+  }
+  .top-imgbg-text-2{
+    font-size: 1.8em;
+  }
 }
 
 @media all and (max-width: 767px){
   .navi-content{
     display: none;
+  }
+  .top-imgbg-text-1{
+    font-size: 3em;
+  }
+  .top-imgbg-text-2{
+    font-size: 1.5em;
   }
 }
 
@@ -32,30 +44,20 @@ body{
   position: relative;
   width: 100%;
   height: 100%;
-  background-image: url("../image/title/0.jpg");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background: url("../image/title/0.jpg") no-repeat center center;
+  background-size: cover;
 }
 
 .top-imgbg-text{
   position: relative;
   text-align: right;
-  top: 80%;
+  top: 75%;
   width: 50%;
-  left: 45%;
+  left: 40%;
   color: white;
   text-shadow: 0.2em 0.2em gray;
   font-weight: bold;
 }
-
-.top-imgbg-text-1{
-  font-size: 4em;
-}
-
-.top-imgbg-text-2{
-  font-size: 1.8em;
-}
-
 
 .content{
   position: relative;
