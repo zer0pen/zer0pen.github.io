@@ -16,4 +16,5 @@ $(document).ready(function(){
 
 function resizeImgbg(){
   $(".top-imgbg").css("height", $(window).height());
+  $("body").css("height", 0);
 }
