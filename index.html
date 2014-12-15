@@ -1,19 +1,11 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 	<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scaleable=no"/>
     <title>0pen.us</title>
 
-  	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scaleable=no"/>
-  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-  	<link href="./bootstrap-3.1.1/css/bootstrap.min.css" rel="stylesheet" media="screen">
+  	<link href="./bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="./style/style.css" rel="stylesheet">
-
-    <script type="text/javascript" src="./js/jquery-1.11.1.min.js"></script>
-    <script type="text/javascript" src="./bootstrap-3.1.1/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="./js/skrollr.js"></script>
-    <script type="text/javascript" src="./js/web.js"></script>
 	</head>
 	<body data-spy="scroll" data-target="#nav-menu">
     <!-- Facebook Like -->
@@ -23,7 +15,7 @@
 		var js, fjs = d.getElementsByTagName(s)[0];
 			if (d.getElementById(id)) return;
 			js = d.createElement(s); js.id = id;
-			js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=766283993400613&version=v2.0";
+			js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&appId=766283993400613&version=v2.0";
 			fjs.parentNode.insertBefore(js, fjs);
 		}(document, 'script', 'facebook-jssdk'));
 		</script>
@@ -119,4 +111,9 @@
       </div>
     <!--</div>-->
 	</body>
+
+  <script type="text/javascript" src="./bower_components/jquery/jquery.min.js"></script>
+  <script type="text/javascript" src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="./bower_components/skrollr/dist/skrollr.min.js"></script>
+  <script type="text/javascript" src="./js/web.js"></script>
 </html>
