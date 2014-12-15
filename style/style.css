@@ -1,7 +1,3 @@
-@font-face{
-  font-family: "NanumGothic";
-  src: url("../font/NanumGothic-Regular.ttf");
-}
 
 @media all and (min-width:768px){
   .navi-content{
@@ -46,7 +42,7 @@
 
 body{
   margin: 0;
-  font-family: "NanumGothic", sans-serif;
+  font-family: "맑은 고딕", "Malgun Gothic", "나눔고딕", "NanumGothic", "AppleSDGothic", sans-serif;
   background-color: rgb(248, 248, 248);
 }
 
