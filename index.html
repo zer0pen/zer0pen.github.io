@@ -1,58 +1,66 @@
 <!DOCTYPE html>
 <html>
-	<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+  <head>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>0pen.us</title>
 
-  	<link href="./bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="./style/style.css" rel="stylesheet">
-	</head>
-	<body data-spy="scroll" data-target="#nav-menu">
-    <!-- Facebook Like -->
-		<div id="fb-root"></div>
-		<script>
-		(function(d, s, id) {
-		var js, fjs = d.getElementsByTagName(s)[0];
-			if (d.getElementById(id)) return;
-			js = d.createElement(s); js.id = id;
-			js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&appId=766283993400613&version=v2.0";
-			fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));
-		</script>
+  </head>
+  <body>
+    <!-- Facebook like start -->
+    <div id="fb-root"></div>
+    <script>
+    (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&appId=766283993400613&version=v2.0";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <!-- Facebook like end -->
 
-    <nav id="nav-menu" class="navbar navbar-default navbar-fixed-top navbar-example" role="navigation">
-      <a class="navbar-brand" href="#">ZER0PEN</a>
-      <p class="navbar-text navbar-right">Sunrin Internet Highschool Game Development</p>
-      <ul class="nav navbar-nav navi-content">
-        <li class="active"><a href="#about">About</a></li>
-        <li><a href="#award">Award</a></li>
-				<li><a href="#games">Games</a></li>
-        <li><a href="#project">Project</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-
-		<!--<div class="contain">-->
-      <div class="top-imgbg">
-        <div class="top-imgbg-text">
-          <div class="top-imgbg-text-1">
-            ZER0PEN
-          </div>
-          <div class="top-imgbg-text-2">
-            Sunrin Internet HighSchool Game Developement Club
-          </div>
+    <nav id="nav-menu"
+         class="navbar navbar-default navbar-fixed-top navbar-example"
+         role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">ZER0PEN</a>
+          <div class="navbar-text hidden-xs">Game Development</div>
+        </div>
+        <div class="collapse navbar-collapse navbar-right">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#about">About</a></li>
+            <li><a href="#award">Award</a></li>
+            <li><a href="#games">Games</a></li>
+            <li><a href="#project">Project</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </div>
       </div>
-      <div class="content" data-0="margin-top: 0px" data-500="margin-top: -700px;">
+    </nav>
+
+    <div class="container">
+      <div class="content">
         <div id="about" class="content-block">
           <div class="content-field">
             <h2>About</h2>
             <h1>ZER0PEN?</h1>
-						<p>
-            	제로픈은 선린인터넷고등학교의 게임개발동아리 입니다. 오픈소스 동아리 levdev에서 시작되었으며, 현재는 게임개발을 주로 다루고 있습니다.<br>
-            	ZER0PEN의 ZER0는 컴퓨터 언어가 0과 1로 구성되어 있다는 점에서 가져오게 되었고, 0PEN은 오픈소스 개발을 지향한다는 뜻을 가지고 있습니다.<br>
-          	</p>
-					</div>
+            <p>
+              제로픈은 선린인터넷고등학교의 게임개발 동아리입니다.
+              오픈소스 동아리 levdev에서 시작되었으며, 현재는 게임 개발을 하고 있습니다. <br />
+              ZER0PEN의 ZER0는 컴퓨터 언어가 0과 1로 구성되어 있다는 점에서 가져오게 되었고,
+              0PEN은 오픈소스 개발을 지향한다는 뜻을 가지고 있습니다. <br />
+            </p>
+          </div>
         </div>
         <div id="award" class="content-block">
           <div class="content-field">
@@ -77,30 +85,34 @@
             </ul>
           </div>
         </div>
-				<div id="games" class="content-block">
-					<div class="content-field">
-						<h2>Games</h2>
-						<div class="game-field">
-							<a href="#"><img src="./image/games/01.png" alt="game01"><br>RT</a>
-						</div>
-					</div>
-				</div>
+        <div id="games" class="content-block">
+          <div class="content-field">
+            <h2>Games</h2>
+            <div class="game-field">
+              <a href="#"><img src="./image/games/01.png" alt="game01"><br>RT</a>
+            </div>
+          </div>
+        </div>
         <div id="project" class="content-block">
           <div class="content-field">
             <h2>Project</h2>
             <ul>
-              <li><a href="https://github.com/zer0pen/zer0pen.github.io" target="_blank">ZeroEngine</a></li>
-              <li><a href="https://github.com/zer0pen/ZeroEngine" target="_blank">zer0pen.github.io</a></li>
-							<a href="https://github.com/zer0pen/" target="_blank">See more</a>
+              <li><a href="https://github.com/zer0pen/zer0pen.github.io">ZeroEngine</a></li>
+              <li><a href="https://github.com/zer0pen/ZeroEngine">zer0pen.github.io</a></li>
+              <li><a href="https://github.com/zer0pen/">See more</a></li>
             </ul>
           </div>
         </div>
         <div id="contact" class="content-block">
           <div class="content-field">
             <h2>Contact</h2>
-            대한민국 서울특별시 용산구 원효로 97길 33-4 3관 10 컴퓨터실<br><br>
-            <a href="http://www.facebook.com/zer0pen/" target="_blank"><button type="button" class="btn btn-primary">Facebook</button></a>
-            <a href="http://github.com/zer0pen/" target="_blank"><button type="button" class="btn btn-default">Github</button></a>
+            대한민국 서울특별시 용산구 원효로 97길 33-4 3호관 컴퓨터 10실<br><br>
+            <a href="http://www.facebook.com/zer0pen/" target="_blank">
+              <button type="button" class="btn btn-primary">Facebook</button>
+            </a>
+            <a href="http://github.com/zer0pen/" target="_blank">
+              <button type="button" class="btn btn-default">Github</button>
+            </a>
           </div>
         </div>
         <div class="content-block" style="margin-bottom: 0;">
@@ -109,11 +121,10 @@
           </div>
         </div>
       </div>
-    <!--</div>-->
-	</body>
+    </div>
+  </body>
 
   <script type="text/javascript" src="./bower_components/jquery/jquery.min.js"></script>
   <script type="text/javascript" src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="./bower_components/skrollr/dist/skrollr.min.js"></script>
   <script type="text/javascript" src="./js/web.js"></script>
 </html>
