@@ -1,34 +1,18 @@
 @charset "UTF-8";
 
+/* 전체적 분위기 설정 시작 */
 * {
   font-family: "맑은 고딕", "Malgun Gothic", "나눔고딕", "NanumGothic", "AppleSDGothic", sans-serif;
   color: #CFCFCF;
   font-weight: 100;
 }
 
-@media (min-width: 1200px) {
-  .container {
-    width: 992px;
-  }
-}
-
-.container-content {
-  padding-top: 50px;
-}
-
-.item img {
-  width: 100%;
-}
-
 body {
   background-color: #262626;
 }
+/* 전체적 분위기 설정 끝 */
 
-#logo {
-  padding-top: 150px;
-  padding-bottom: 600px; /* 로드 시 JS에 의해 화면에 맞게 변경됨 */
-}
-
+/* 네비게이션 바 시작 */
 #nav-menu {
   -moz-animation-name: dropHeader;
   -moz-animation-iteration-count: 1;
@@ -45,8 +29,18 @@ body {
   animation-timing-function: ease-in-out;
   animation-duration: 0.3s;
 }
+/* 네비게이션 바 끝 */
 
-#logo #title {
+/* 로고 섹션 시작 */
+#section-logo {
+  height: 768px;
+}
+
+#section-logo #logo {
+  padding-top: 150px;
+}
+
+#section-logo #logo #title {
   -moz-animation-name: animationTitle;
   -moz-animation-iteration-count: 1;
   -moz-animation-timing-function: ease-in;
@@ -63,7 +57,7 @@ body {
   animation-duration: 0.5s;
 }
 
-#logo #subtitle {
+#section-logo #logo #subtitle {
   padding-top: 80px;
   padding-right: 3%;
   padding-left: 25%;
@@ -85,7 +79,9 @@ body {
   animation-timing-function: ease-in;
   animation-duration: 1.2s;
 }
+/* 로고 섹션 끝 */
 
+/* 애니메이션 키 프레임 시작 */
 @-moz-keyframes animationTitle {
   0% {
     opacity: 0;
@@ -135,3 +131,4 @@ body {
     transform: translateY(0);
   }
 }
+/* 애니메이션 키 프레임 끝 */

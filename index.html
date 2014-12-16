@@ -1,159 +1,112 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <meta charset="utf-8" />
-    <title>0pen.us</title>
+<head>
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta charset="utf-8" />
+  <title>0pen.us</title>
 
-    <link href="./bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="./style/style.css" rel="stylesheet">
-  </head>
-  <body>
-    <!-- Facebook like start -->
-    <div id="fb-root"></div>
-    <script>
-    (function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&appId=766283993400613&version=v2.0";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-    </script>
-    <!-- Facebook like end -->
-
-    <nav id="nav-menu" class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="/">ZER0PEN</a>
-          <div class="navbar-text hidden-xs">Sunrin Game Development Club</div>
-        </div>
-        <div class="collapse navbar-collapse navbar-right" id="navbar">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#about">About</a></li>
-            <li><a href="#award">Award</a></li>
-            <li><a href="#games">Games</a></li>
-            <li><a href="#project">Project</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
+  <link href="./bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./style/style.css" rel="stylesheet">
+</head>
+<body>
+  <nav id="nav-menu" class="navbar navbar-default navbar-fixed-top navbar-inverse" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">ZER0PEN</a>
+        <div class="navbar-text hidden-xs">Sunrin Game Development Club</div>
       </div>
-    </nav>
-
-    <div class="container container-content">
-      <div id="logo">
-        <img id="title" src="./image/zer0pen.png" class="img-responsive">
-        <span id="subtitle">Welcome to <b>Sunrin Internet High School Game Development Club</b>!</span>
+      <div class="collapse navbar-collapse navbar-right" id="navbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#about">About</a></li>
+          <li><a href="#award">Award</a></li>
+          <li><a href="#games">Games</a></li>
+          <li><a href="#project">Project</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </div>
     </div>
+  </nav>
 
-    <div class="container container-content">
-      <!--div id="carousel-generic" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner" role="listbox">
-          <div class="item active"><img src="./image/title/0.jpg"></div>
-          <div class="item"><img src="./image/title/1.jpg"></div>
-          <div class="item"><img src="./image/title/2.jpg"></div>
-          <div class="item"><img src="./image/title/3.jpg"></div>
-          <div class="item"><img src="./image/title/4.jpg"></div>
-          <div class="item"><img src="./image/title/5.jpg"></div>
-          <div class="item"><img src="./image/title/6.jpg"></div>
-          <div class="item"><img src="./image/title/7.jpg"></div>
-          <div class="item"><img src="./image/title/8.jpg"></div>
-          <div class="item"><img src="./image/title/9.jpg"></div>
-        </div>
-
-        <a class="left carousel-control" href="#carousel-generic" role="button" data-slide="prev">
-          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-          <span class="sr-only">이전</span>
-        </a>
-        <a class="right carousel-control" href="#carousel-generic" role="button" data-slide="next">
-          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-          <span class="sr-only">다음</span>
-        </a>
-      </div-->
-      <div class="content">
-        <div id="about" class="content-block">
-          <div class="content-field">
-            <h2>About ZER0PEN</h2>
-            <p>
-              Zer0pen는 선린인터넷고등학교의 게임 개발 동아리입니다.
-              오픈소스 동아리 levdev에서 시작되었으며, 현재는 게임 개발을 하고 있습니다.
-              ZER0PEN의 ZER0는 컴퓨터 언어가 0과 1로 구성되어 있다는 점에서 가져오게 되었고,
-              0PEN은 오픈소스 개발을 지향한다는 뜻이 있습니다.
-            </p>
-          </div>
-        </div>
-        <div id="award" class="content-block">
-          <div class="content-field">
-            <h2>Award</h2>
-            <h3>2013</h3>
-            <ul>
-              <li>살아남기</li>
-              <li>미로찾기</li>
-              <li>뭐시기</li>
-            </ul>
-            <h3>2012</h3>
-            <ul>
-              <li>팬텀즈</li>
-              <li>놀러오세요</li>
-              <li>뭐시기</li>
-            </ul>
-            <h3>2011</h3>
-            <ul>
-              <li>메탈리어</li>
-              <li>이스케이프</li>
-              <li>뭐시기</li>
-            </ul>
-          </div>
-        </div>
-        <div id="games" class="content-block">
-          <div class="content-field">
-            <h2>Games</h2>
-            <div class="game-field">
-              <a href="#"><img src="./image/games/01.png" alt="game01"><br>RT</a>
-            </div>
-          </div>
-        </div>
-        <div id="project" class="content-block">
-          <div class="content-field">
-            <h2>Project</h2>
-            <ul>
-              <li><a href="https://github.com/zer0pen/zer0pen.github.io">ZeroEngine</a></li>
-              <li><a href="https://github.com/zer0pen/ZeroEngine">zer0pen.github.io</a></li>
-              <li><a href="https://github.com/zer0pen/">See more</a></li>
-            </ul>
-          </div>
-        </div>
-        <div id="contact" class="content-block">
-          <div class="content-field">
-            <h2>Contact</h2>
-            대한민국 서울특별시 용산구 원효로 97길 33-4 3호관 컴퓨터 10실<br><br>
-            <a href="http://www.facebook.com/zer0pen/" target="_blank">
-              <button type="button" class="btn btn-primary">Facebook</button>
-            </a>
-            <a href="http://github.com/zer0pen/" target="_blank">
-              <button type="button" class="btn btn-default">Github</button>
-            </a>
-          </div>
-        </div>
-        <div class="content-block" style="margin-bottom: 0;">
-          <div class="content-field copyright">
-            copyright © 2014 by <a href="https://github.com/zer0pen" target="_blank">ZER0PEN</a>
-          </div>
-        </div>
-      </div>
+  <section id="section-logo" class="container">
+    <div id="logo">
+      <img id="title" src="./image/zer0pen.png" class="img-responsive">
+      <span id="subtitle">Welcome to <b>Sunrin Internet High School Game Development Club</b> :)</span>
     </div>
-  </body>
+  </section>
+
+  <section id="section-about" class="container">
+    <h2>About ZER0PEN</h2>
+    <p>
+      Zer0pen는 선린인터넷고등학교의 게임 개발 동아리입니다.
+      오픈소스 동아리 levdev에서 시작되었으며, 현재는 게임 개발을 하고 있습니다.
+      ZER0PEN의 ZER0는 컴퓨터 언어가 0과 1로 구성되어 있다는 점에서 가져오게 되었고,
+      0PEN은 오픈소스 개발을 지향한다는 뜻이 있습니다.
+    </p>
+  </section>
+
+  <section id="section-award" class="container">
+    <h2>Award</h2>
+    <h3>2013</h3>
+    <ul>
+      <li>살아남기</li>
+      <li>미로찾기</li>
+      <li>뭐시기</li>
+    </ul>
+    <h3>2012</h3>
+    <ul>
+      <li>팬텀즈</li>
+      <li>놀러오세요</li>
+      <li>뭐시기</li>
+    </ul>
+    <h3>2011</h3>
+    <ul>
+      <li>메탈리어</li>
+      <li>이스케이프</li>
+      <li>뭐시기</li>
+    </ul>
+  </section>
+
+  <section id="section-game" class="container">
+    <h2>Games</h2>
+    <div class="game-field">
+      <a href="#"><img src="./image/games/01.png" alt="game01"><br>RT</a>
+    </div>
+  </section>
+
+  <section id="section-project" class="container">
+    <h2>Project</h2>
+    <ul>
+      <li><a href="https://github.com/zer0pen/zer0pen.github.io">ZeroEngine</a></li>
+      <li><a href="https://github.com/zer0pen/ZeroEngine">zer0pen.github.io</a></li>
+      <li><a href="https://github.com/zer0pen/">See more</a></li>
+    </ul>
+  </section>
+
+  <section id="section-contact" class="container">
+    <h2>Contact</h2>
+    대한민국 서울특별시 용산구 원효로 97길 33-4 3호관 컴퓨터 10실<br><br>
+    <a href="http://www.facebook.com/zer0pen/" target="_blank">
+      <button type="button" class="btn btn-primary">Facebook</button>
+    </a>
+    <a href="http://github.com/zer0pen/" target="_blank">
+      <button type="button" class="btn btn-default">Github</button>
+    </a>
+  </section>
+
+  <section class="section-copyright">
+    copyright © 2014 by <a href="https://github.com/zer0pen" target="_blank">ZER0PEN</a>
+  </section>
 
   <script type="text/javascript" src="./bower_components/jquery/jquery.min.js"></script>
   <script type="text/javascript" src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="./bower_components/bootstrap/js/carousel.js"></script>
   <script type="text/javascript" src="./script/script.js"></script>
+</body>
 </html>
