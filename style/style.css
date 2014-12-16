@@ -25,6 +25,7 @@ body {
 }
 
 #logo {
+  padding-top: 150px;
   padding-bottom: 600px; /* 로드 시 JS에 의해 화면에 맞게 변경됨 */
 }
 
@@ -46,7 +47,6 @@ body {
 }
 
 #logo #title {
-  padding-top: 150px;
   -moz-animation-name: animationTitle;
   -moz-animation-iteration-count: 1;
   -moz-animation-timing-function: ease-in;

@@ -1,4 +1,5 @@
 $(document).ready ->
 	$ "#logo"
-		.css "padding-bottom", $(window).height() / 2
+		.css "padding-top", Math.floor $(window).height() / 2 - $(window).height() / 3
+		.css "padding-bottom", Math.floor $(window).height() / 2 + 10
 	return
