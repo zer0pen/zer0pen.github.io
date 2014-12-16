@@ -2,6 +2,8 @@
 
 * {
   font-family: "맑은 고딕", "Malgun Gothic", "나눔고딕", "NanumGothic", "AppleSDGothic", sans-serif;
+  color: #CFCFCF;
+  font-weight: 100;
 }
 
 @media (min-width: 1200px) {
@@ -16,4 +18,120 @@
 
 .item img {
   width: 100%;
+}
+
+body {
+  background-color: #262626;
+}
+
+#logo {
+  padding-bottom: 600px; /* 로드 시 JS에 의해 화면에 맞게 변경됨 */
+}
+
+#nav-menu {
+  -moz-animation-name: dropHeader;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-timing-function: ease-in-out;
+  -moz-animation-duration: 0.3s;
+
+  -webkit-animation-name: dropHeader;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-duration: 0.3s;
+
+  animation-name: dropHeader;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.3s;
+}
+
+#logo #title {
+  padding-top: 150px;
+  -moz-animation-name: animationTitle;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-timing-function: ease-in;
+  -moz-animation-duration: 0.5s;
+
+  -webkit-animation-name: animationTitle;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+  -webkit-animation-duration: 0.5s;
+
+  animation-name: animationTitle;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.5s;
+}
+
+#logo #subtitle {
+  padding-top: 80px;
+  padding-right: 3%;
+  padding-left: 25%;
+  font-size: 19px;
+  float: right;
+
+  -moz-animation-name: animationTitle;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-timing-function: ease-in;
+  -moz-animation-duration: 1.2s;
+
+  -webkit-animation-name: animationTitle;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+  -webkit-animation-duration: 1.2s;
+
+  animation-name: animationTitle;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1.2s;
+}
+
+@-moz-keyframes animationTitle {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes animationTitle {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes animationTitle {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes dropHeader {
+  0% {
+    -moz-transform: translateY(-50px);
+  }
+  100% {
+    -moz-transform: translateY(0);
+  }
+}
+@-webkit-keyframes dropHeader {
+  0% {
+    -webkit-transform: translateY(-50px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+  }
+}
+@keyframes dropHeader {
+  0% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
