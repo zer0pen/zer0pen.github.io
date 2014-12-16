@@ -15,6 +15,14 @@ body {
   color: #f2f45f;
   font-weight: bold;
 }
+
+.hidden-scroll {
+  opacity: 0.1;
+}
+
+.visible-scroll {
+  opacity: 1;
+}
 /* 전체적 분위기 설정 끝 */
 
 /* 네비게이션 바 시작 */
@@ -59,6 +67,14 @@ body {
   float: right;
 }
 
+/* 모바일에서는 박스 크기가 일정하게 하기 시작 */
+@media screen and (max-width: 480px) {
+  .container section:nth-child(n+2) {
+    width: 100%;
+  }
+}
+/* 모바일에서는 박스 크기가 일정하게 하기 끝 */
+
 /* 섹션 공통 부분 끝 */
 
 /* 로고 섹션 시작 */
@@ -73,18 +89,18 @@ body {
 #section-logo #logo #title {
   -moz-animation-name: animationTitle;
   -moz-animation-iteration-count: 1;
-  -moz-animation-timing-function: ease-in;
-  -moz-animation-duration: 0.5s;
+  -moz-animation-timing-function: ease-out;
+  -moz-animation-duration: 0.9s;
 
   -webkit-animation-name: animationTitle;
   -webkit-animation-iteration-count: 1;
-  -webkit-animation-timing-function: ease-in;
-  -webkit-animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease-out;
+  -webkit-animation-duration: 0.9s;
 
   animation-name: animationTitle;
   animation-iteration-count: 1;
-  animation-timing-function: ease-in;
-  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+  animation-duration: 0.9s;
 }
 
 #section-logo #logo #subtitle {
@@ -96,25 +112,22 @@ body {
 
   -moz-animation-name: animationTitle;
   -moz-animation-iteration-count: 1;
-  -moz-animation-timing-function: ease-in;
-  -moz-animation-duration: 1.2s;
+  -moz-animation-timing-function: ease-out;
+  -moz-animation-duration: 0.9s;
 
   -webkit-animation-name: animationTitle;
   -webkit-animation-iteration-count: 1;
-  -webkit-animation-timing-function: ease-in;
-  -webkit-animation-duration: 1.2s;
+  -webkit-animation-timing-function: ease-out;
+  -webkit-animation-duration: 0.9s;
 
   animation-name: animationTitle;
   animation-iteration-count: 1;
-  animation-timing-function: ease-in;
-  animation-duration: 1.2s;
+  animation-timing-function: ease-out;
+  animation-duration: 0.9s;
 }
 /* 로고 섹션 끝 */
 
 /* About 섹션 시작 */
-#section-about {
-  min-height: 400px;
-}
 #section-about .icon {
   margin-right: 30px;
   width: 350px;
@@ -166,9 +179,11 @@ body {
 }
 @-webkit-keyframes animationTitle {
   0% {
+    -webkit-transform: scale(2);
     opacity: 0;
   }
   100% {
+    -webkit-transform: scale(1);
     opacity: 1;
   }
 }

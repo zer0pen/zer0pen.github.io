@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko-KR">
 <head>
   <meta name="viewport"
-        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
   <meta charset="utf-8" />
   <title>0pen.us</title>
-
   <link href="./bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./bower_components/animate.css/animate.min.css" rel="stylesheet">
   <link href="./style/style.css" rel="stylesheet">
 </head>
 <body>
@@ -34,29 +34,30 @@
     </div>
   </nav>
 
-  <div class="container" id="container-content">
+  <div id="container-content" class="container">
     <section id="section-logo">
       <div id="logo">
-        <img id="title" src="./image/zer0pen.png" class="img-responsive ">
+        <img id="title" src="./image/zer0pen.png" class="img-responsive">
         <span id="subtitle">
           <span class="yellow">선린인터넷고등학교 게임 개발 동아리</span>에 오신 것을 환영합니다 :)
         </span>
       </div>
     </section>
 
-    <section id="section-about">
+    <section id="section-about" class="post">
       <h1 class="name">About</h1>
-      <img src="./image/icons/open_source.png" class="icon img-responsive ">
+      <img src="./image/icons/open_source.png" class="icon img-responsive hidden-xs">
       <p class="description">
         <span class="yellow">ZER0PEN</span>은 선린인터넷고등학교의 <span class="yellow">게임 개발 동아리</span>입니다.
-        오픈소스 동아리 <span class="yellow">levdev</span>에서 시작되었으며, 현재는 <span class="yellow">게임 개발</span>을 하고 있습니다.
-        <span class="yellow">ZER0PEN</span>의 <span class="yellow">ZER0</span>는 컴퓨터 언어가 0과 1로 구성되어 있다는 점에서 가져오게 되었고,
-        <span class="yellow">0PEN</span>은 오픈소스 개발을 지향한다는 뜻이 있습니다.
+        오픈소스 동아리 <span class="yellow">levdev</span>에서 시작되었으며, 현재는 <span class="yellow">
+        게임 개발</span>을 하고 있습니다. <span class="yellow">ZER0PEN</span>의 <span class="yellow">ZER0</span>는
+        컴퓨터 언어가 0과 1로 구성되어 있다는 점에서 가져오게 되었고, <span class="yellow">0PEN</span>은 오픈소스 개발을
+        지향한다는 점에서 가져오게 되었습니다.
       </p>
     </section>
 
-    <section id="section-award">
-      <img src="./image/icons/award.png" class="icon img-responsive ">
+    <section id="section-award" class="post">
+      <img src="./image/icons/award.png" class="icon img-responsive hidden-xs">
       <h1 class="name">Award</h1>
       <!-- Reference: https://prezi.com/bxoj6gxtfsz-/2014-zer0pen/ -->
       <h3>2013년</h3>
@@ -92,18 +93,18 @@
       </ul>
     </section>
 
-    <section id="section-game">
+    <section id="section-game" class="post">
       <h1 class="title">Games</h1>
       <div class="game-field">
         <a href="#"><img src="./image/games/01.png" alt="game01"><br>RT</a>
       </div>
     </section>
 
-    <section id="section-project">
+    <section id="section-project" class="post">
       <h1 class="title">Project</h1>
       <ul>
         <li>
-          <a href="https://github.com/zer0pen/zer0pen.github.io">ZeroEngine</a> <small class="text-muted">|</small>
+          <a href="https://github.com/zer0pen/ZeroEngine">ZeroEngine</a> <span class="text-muted">|</span>
           C++ / DirectX Game Engine Framework
         </li>
       </ul>
@@ -123,6 +124,7 @@
   </footer>
 
   <script type="text/javascript" src="./bower_components/jquery/jquery.min.js"></script>
+  <script type="text/javascript" src="./bower_components/jquery-viewport-checker/src/jquery.viewportchecker.js"></script>
   <script type="text/javascript" src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="./bower_components/bootstrap/js/carousel.js"></script>
   <script type="text/javascript" src="./script/script.js"></script>
