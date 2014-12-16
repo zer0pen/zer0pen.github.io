@@ -10,6 +10,11 @@
 body {
   background-color: #262626;
 }
+
+.yellow {
+  color: #f2f45f;
+  font-weight: bold;
+}
 /* 전체적 분위기 설정 끝 */
 
 /* 네비게이션 바 시작 */
@@ -41,8 +46,9 @@ body {
   padding: 9px 23px;
 }
 
-.container section:nth-child(n+2) .name {
+.container section:nth-child(n+2) .title {
   font-weight: 100;
+  font-family: Arial;
 }
 
 .container section:nth-child(2n) {
@@ -107,7 +113,7 @@ body {
 
 /* About 섹션 시작 */
 #section-about {
-  height: 400px;
+  min-height: 400px;
 }
 #section-about .icon {
   margin-right: 30px;
@@ -116,11 +122,20 @@ body {
 }
 #section-about .description {
   font-size: 23px;
-  margin-top: 70px
+  margin-top: 30px;
 }
 /* About 섹션 끝 */
 
 /* Award 섹션 시작 */
+.container ul {
+  list-style-type: none;
+  font-size: 18px;
+}
+#container-content ul li:before {
+  content: "–"; /* en dash here */
+  position: absolute;
+  margin-left: -1.1em;
+}
 #section-award .icon {
   float: right;
   width: 350px;
