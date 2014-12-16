@@ -66,16 +66,15 @@ body {
 .container section:nth-child(2n+1) {
   float: right;
 }
+/* 섹션 공통 부분 끝 */
 
-/* 모바일에서는 박스 크기가 일정하게 하기 시작 */
+/* 모바일에서는 섹션 너비가 일정하게 하기 시작 */
 @media screen and (max-width: 480px) {
   .container section:nth-child(n+2) {
     width: 100%;
   }
 }
-/* 모바일에서는 박스 크기가 일정하게 하기 끝 */
-
-/* 섹션 공통 부분 끝 */
+/* 모바일에서는 섹션 너비가 일정하게 하기 끝 */
 
 /* 로고 섹션 시작 */
 #section-logo {
@@ -156,6 +155,13 @@ body {
 }
 /* Award 섹션 끝 */
 
+/* Project 섹션 시작 */
+#section-project .icon {
+  float: right;
+  width: 350px;
+}
+/* Project 섹션 끝 */
+
 /* Footer 시작 */
 #footer {
   width: 100%;
@@ -179,11 +185,9 @@ body {
 }
 @-webkit-keyframes animationTitle {
   0% {
-    -webkit-transform: scale(2);
     opacity: 0;
   }
   100% {
-    -webkit-transform: scale(1);
     opacity: 1;
   }
 }
