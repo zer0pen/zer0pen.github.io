@@ -23,6 +23,12 @@ body {
 .visible-scroll {
   opacity: 1;
 }
+
+.fb-like {
+  display: block;
+  float: right;
+  margin-right: 20px;
+}
 /* 전체적 분위기 설정 끝 */
 
 /* 네비게이션 바 시작 */
