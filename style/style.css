@@ -126,8 +126,9 @@ nav {
 
 /* Project 섹션 시작 */
 #section-project .icon {
-  float: right;
+  margin-right: 30px;
   width: 350px;
+  float: left;
 }
 /* Project 섹션 끝 */
 
