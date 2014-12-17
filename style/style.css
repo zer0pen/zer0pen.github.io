@@ -13,7 +13,6 @@ body {
 
 .yellow {
   color: #f2f45f;
-  font-weight: bold;
 }
 
 .hidden-scroll {
@@ -60,13 +59,8 @@ nav {
   padding: 9px 23px;
 }
 
-.container section:nth-child(n+2) .title {
-  font-weight: 100;
-  font-family: Arial;
-}
-
 .container section:nth-child(n+2) .description {
-  font-size: 23px;
+  font-size: 19px;
 }
 
 .container section:nth-child(2n) {
