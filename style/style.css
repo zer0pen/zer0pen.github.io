@@ -26,7 +26,7 @@ body {
 /* 전체적 분위기 설정 끝 */
 
 /* 네비게이션 바 시작 */
-#nav-menu {
+nav {
   -moz-animation-name: dropHeader;
   -moz-animation-iteration-count: 1;
   -moz-animation-timing-function: ease-in-out;
@@ -66,6 +66,16 @@ body {
 .container section:nth-child(2n+1) {
   float: right;
 }
+
+.container ul {
+  list-style-type: none;
+  font-size: 18px;
+}
+#container-content ul li:before {
+  content: "–"; /* en dash here */
+  position: absolute;
+  margin-left: -1.1em;
+}
 /* 섹션 공통 부분 끝 */
 
 /* 모바일에서는 섹션 너비가 일정하게 하기 시작 */
@@ -85,44 +95,12 @@ body {
   padding-top: 150px;
 }
 
-#section-logo #logo #title {
-  -moz-animation-name: animationTitle;
-  -moz-animation-iteration-count: 1;
-  -moz-animation-timing-function: ease-out;
-  -moz-animation-duration: 0.9s;
-
-  -webkit-animation-name: animationTitle;
-  -webkit-animation-iteration-count: 1;
-  -webkit-animation-timing-function: ease-out;
-  -webkit-animation-duration: 0.9s;
-
-  animation-name: animationTitle;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-out;
-  animation-duration: 0.9s;
-}
-
 #section-logo #logo #subtitle {
   padding-top: 80px;
   padding-right: 3%;
   padding-left: 25%;
   font-size: 19px;
   float: right;
-
-  -moz-animation-name: animationTitle;
-  -moz-animation-iteration-count: 1;
-  -moz-animation-timing-function: ease-out;
-  -moz-animation-duration: 0.9s;
-
-  -webkit-animation-name: animationTitle;
-  -webkit-animation-iteration-count: 1;
-  -webkit-animation-timing-function: ease-out;
-  -webkit-animation-duration: 0.9s;
-
-  animation-name: animationTitle;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-out;
-  animation-duration: 0.9s;
 }
 /* 로고 섹션 끝 */
 
@@ -139,15 +117,6 @@ body {
 /* About 섹션 끝 */
 
 /* Award 섹션 시작 */
-.container ul {
-  list-style-type: none;
-  font-size: 18px;
-}
-#container-content ul li:before {
-  content: "–"; /* en dash here */
-  position: absolute;
-  margin-left: -1.1em;
-}
 #section-award .icon {
   float: right;
   width: 350px;
@@ -175,31 +144,6 @@ body {
 /* Footer 끝 */
 
 /* 애니메이션 키 프레임 시작 */
-@-moz-keyframes animationTitle {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes animationTitle {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes animationTitle {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 @-moz-keyframes dropHeader {
   0% {
     -moz-transform: translateY(-50px);
