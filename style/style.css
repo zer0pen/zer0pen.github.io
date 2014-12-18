@@ -26,6 +26,7 @@ body {
 .fb-like {
   display: block;
   float: right;
+  margin-top: 20px;
   margin-right: 20px;
 }
 /* 전체적 분위기 설정 끝 */
@@ -100,7 +101,7 @@ nav {
 }
 
 #section-logo #logo #subtitle {
-  padding-top: 80px;
+  padding-top: 60px;
   padding-right: 3%;
   padding-left: 25%;
   font-size: 19px;
@@ -110,12 +111,18 @@ nav {
 
 /* About 섹션 시작 */
 #section-about .icon {
+  margin-left: -11px;
   margin-right: 30px;
   width: 350px;
   float: left;
 }
+
 #section-about .description {
   margin-top: 30px;
+}
+
+#section-about .name {
+  margin-top: 9px;
 }
 /* About 섹션 끝 */
 
@@ -123,7 +130,11 @@ nav {
 #section-award .icon {
   float: right;
   width: 350px;
-  margin-top: 20px;
+  margin-top: 40px;
+}
+
+#section-award .name {
+  margin-top: 9px;
 }
 /* Award 섹션 끝 */
 
@@ -132,6 +143,10 @@ nav {
   margin-right: 30px;
   width: 350px;
   float: left;
+}
+
+#section-project .name {
+  margin-top: 9px;
 }
 /* Project 섹션 끝 */
 
@@ -148,7 +163,7 @@ nav {
 /* Footer 끝 */
 
 /* 애니메이션 키 프레임 시작 */
-@-moz-keyframes dropHeader {
+  @-moz-keyframes dropHeader {
   0% {
     -moz-transform: translateY(-50px);
   }
