@@ -63,30 +63,16 @@ nav {
 
 /* 섹션 공통 부분 시작 */
 .container section:nth-child(n+2) {
-  width: 90%;
-  box-shadow: 0 2px 1px rgba(0,0,0,0.1), 0 0 1px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1), 0 0 1px rgba(0, 0, 0, 0.1);
   margin-bottom: 30px;
   background-color: #333;
   border-radius: 3px;
   padding: 9px 23px;
 }
 
-.container section:nth-child(n+2) .description p,
-.container section:nth-child(n+2) .description li,
-.container section:nth-child(n+2) .description a,
-.container section:nth-child(n+2) .description b,
-.container section:nth-child(n+2) .description .yellow,
-#subtitle, #subtitle .yellow {
+.description, .description *, #subtitle, #subtitle * {
   font-size: 19px;
   font-family: "Lora";
-}
-
-.container section:nth-child(2n) {
-  float: left;
-}
-
-.container section:nth-child(2n+1) {
-  float: right;
 }
 
 .container ul {
@@ -105,16 +91,49 @@ nav {
   font-family: "Maven Pro";
   font-size: 60px;
   color: #888;
+  margin-top: 5px;
+}
+
+.icon {
+  width: 270px;
+  float: right;
+}
+
+.description {
+  margin-left: 10px;
+}
+
+section {
+  overflow: auto;
 }
 /* 섹션 공통 부분 끝 */
 
-/* 모바일에서는 섹션 너비가 일정하게 하기 시작 */
-@media screen and (max-width: 480px) {
-  .container section:nth-child(n+2) {
-    width: 100%;
-  }
+/* About 섹션 시작 */
+#section-about .icon {
+  margin: 10px -4px 6px 21px;
 }
-/* 모바일에서는 섹션 너비가 일정하게 하기 끝 */
+
+#section-about .description {
+  margin-top: 16px;
+}
+/* About 섹션 끝 */
+
+/* Award 섹션 시작 */
+#section-award {
+  position: relative;
+}
+#section-award .icon {
+  position: absolute;
+  right: 22px;
+  bottom: 20px;
+}
+/* Award 섹션 끝 */
+
+/* Project 섹션 시작 */
+#section-project .icon {
+  margin: 5px 4px 7px 0;
+}
+/* Project 섹션 끝 */
 
 /* 로고 섹션 시작 */
 #section-logo {
@@ -134,53 +153,6 @@ nav {
 }
 /* 로고 섹션 끝 */
 
-/* About 섹션 시작 */
-#section-about .icon {
-  margin-left: -11px;
-  margin-right: 20px;
-  width: 350px;
-  float: left;
-}
-
-#section-about .description {
-  margin-top: 10px;
-}
-/* About 섹션 끝 */
-
-/* Award 섹션 시작 */
-#section-award .icon {
-  float: right;
-  width: 350px;
-  margin-top: 40px;
-}
-
-#section-award .name {
-  margin-top: 0;
-}
-/* Award 섹션 끝 */
-
-/* Project 섹션 시작 */
-#section-project .icon {
-  margin-right: 30px;
-  width: 350px;
-  float: left;
-}
-
-#section-project .name {
-  margin-top: 9px;
-  margin-left: -40px;
-}
-
-@media screen and (max-width: 768px) {
-  #section-project .name {
-    margin-left: 0;
-  }
-}
-
-#section-project .description {
-}
-/* Project 섹션 끝 */
-
 /* Footer 시작 */
 #footer {
   width: 100%;
@@ -194,7 +166,7 @@ nav {
 /* Footer 끝 */
 
 /* 애니메이션 키 프레임 시작 */
-  @-moz-keyframes dropHeader {
+@-moz-keyframes dropHeader {
   0% {
     -moz-transform: translateY(-50px);
   }
