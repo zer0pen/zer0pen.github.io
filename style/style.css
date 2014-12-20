@@ -95,22 +95,36 @@ nav {
 }
 
 .icon {
-  width: 270px;
+  width: 130px;
   float: right;
+  position: absolute;
+  z-index: 1;
 }
 
 .description {
   margin-left: 10px;
 }
 
+@media screen and (min-width: 768px) {
+  .description {
+    margin-right: 200px;
+  }
+}
+
+.description * {
+  z-index: 2;
+}
+
 section {
   overflow: auto;
+  position: relative;
 }
 /* 섹션 공통 부분 끝 */
 
 /* About 섹션 시작 */
 #section-about .icon {
-  margin: 10px -4px 6px 21px;
+  right: 22px;
+  bottom: 20px;
 }
 
 #section-about .description {
@@ -119,11 +133,7 @@ section {
 /* About 섹션 끝 */
 
 /* Award 섹션 시작 */
-#section-award {
-  position: relative;
-}
 #section-award .icon {
-  position: absolute;
   right: 22px;
   bottom: 20px;
 }
@@ -131,7 +141,8 @@ section {
 
 /* Project 섹션 시작 */
 #section-project .icon {
-  margin: 5px 4px 7px 0;
+  right: 22px;
+  bottom: 20px;
 }
 /* Project 섹션 끝 */
 
