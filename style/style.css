@@ -154,6 +154,17 @@ section {
   padding-top: 150px;
 }
 
+/* 모바일에서 공백이 너무 많이 출력되는 현상 수정  */
+@media screen and (max-width: 767px) {
+  #section-logo {
+    height: 500px;
+  }
+
+  #section-logo #logo {
+    padding-top: 75px;
+  }
+}
+
 #section-logo #logo #subtitle {
   padding-top: 60px;
   padding-right: 3%;
