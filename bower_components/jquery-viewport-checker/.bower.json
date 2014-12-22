@@ -1,0 +1,35 @@
+{
+  "name": "jQuery-viewport-checkerr",
+  "version": "1.7.4",
+  "homepage": "https://github.com/dirkgroenen/jQuery-viewport-checker",
+  "authors": [
+    "Dirk Groenen <dirk@bitlabs.nl>",
+    "Suraj Air <surajair@live.com>"
+  ],
+  "description": "jQuery based viewport checker",
+  "main": "jquery.viewportchecker.js",
+  "keywords": [
+    "jQuery",
+    "Viewport",
+    "checker",
+    "Viewport"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "1.7.4",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.7.4",
+    "commit": "80871bb25e90c20f8e9a53d8a0ec3ecf24e872ae"
+  },
+  "_source": "git://github.com/dirkgroenen/jQuery-viewport-checker.git",
+  "_target": "~1.7.4",
+  "_originalSource": "jquery-viewport-checker",
+  "_direct": true
+}

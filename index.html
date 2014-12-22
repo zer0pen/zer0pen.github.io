@@ -1,122 +1,157 @@
-<!doctype html>
-<html>
-	<head>
-    <title>0pen.us</title>
-
-  	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scaleable=no"/>
-  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-  	<link href="./bootstrap-3.1.1/css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <link href="./style/style.css" rel="stylesheet">
-
-    <script type="text/javascript" src="./js/jquery-1.11.1.min.js"></script>
-    <script type="text/javascript" src="./bootstrap-3.1.1/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="./js/skrollr.js"></script>
-    <script type="text/javascript" src="./js/web.js"></script>
-	</head>
-	<body data-spy="scroll" data-target="#nav-menu">
-    <!-- Facebook Like -->
-		<div id="fb-root"></div>
-		<script>
-		(function(d, s, id) {
-		var js, fjs = d.getElementsByTagName(s)[0];
-			if (d.getElementById(id)) return;
-			js = d.createElement(s); js.id = id;
-			js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=766283993400613&version=v2.0";
-			fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));
-		</script>
-
-    <nav id="nav-menu" class="navbar navbar-default navbar-fixed-top navbar-example" role="navigation">
-      <a class="navbar-brand" href="#">ZER0PEN</a>
-      <p class="navbar-text navbar-right">Sunrin Internet Highschool Game Development</p>
-      <ul class="nav navbar-nav navi-content">
-        <li class="active"><a href="#about">About</a></li>
-        <li><a href="#award">Award</a></li>
-				<li><a href="#games">Games</a></li>
-        <li><a href="#project">Project</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-
-		<!--<div class="contain">-->
-      <div class="top-imgbg">
-        <div class="top-imgbg-text">
-          <div class="top-imgbg-text-1">
-            ZER0PEN
-          </div>
-          <div class="top-imgbg-text-2">
-            Sunrin Internet HighSchool Game Developement Club
-          </div>
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no" />
+  <meta charset="utf-8" />
+  <title>0pen.us</title>
+  <link href="./bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./bower_components/animate.css/animate.min.css" rel="stylesheet">
+  <link href="./style/style.css" rel="stylesheet">
+</head>
+<body>
+  <div id="fb-root"></div>
+  <nav class="navbar navbar-default navbar-static-top navbar-inverse" role="navigation">
+    <div class="container">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">ZER0PEN</a>
+          <div class="navbar-text hidden-xs">Game Development Club</div>
+        </div>
+        <div class="collapse navbar-collapse navbar-right" id="navbar">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#section-about">About</a></li>
+            <li><a href="#section-award">Award</a></li>
+            <li><a href="#section-project">Project</a></li>
+          </ul>
         </div>
       </div>
-      <div class="content" data-0="margin-top: 0px" data-500="margin-top: -700px;">
-        <div id="about" class="content-block">
-          <div class="content-field">
-            <h2>About</h2>
-            <h1>ZER0PEN?</h1>
-						<p>
-            	제로픈은 선린인터넷고등학교의 게임개발동아리 입니다. 오픈소스 동아리 levdev에서 시작되었으며, 현재는 게임개발을 주로 다루고 있습니다.<br>
-            	ZER0PEN의 ZER0는 컴퓨터 언어가 0과 1로 구성되어 있다는 점에서 가져오게 되었고, 0PEN은 오픈소스 개발을 지향한다는 뜻을 가지고 있습니다.<br>
-          	</p>
-					</div>
-        </div>
-        <div id="award" class="content-block">
-          <div class="content-field">
-            <h2>Award</h2>
-            <h3>2013</h3>
-            <ul>
-              <li>살아남기</li>
-              <li>미로찾기</li>
-              <li>뭐시기</li>
-            </ul>
-            <h3>2012</h3>
-            <ul>
-              <li>팬텀즈</li>
-              <li>놀러오세요</li>
-              <li>뭐시기</li>
-            </ul>
-            <h3>2011</h3>
-            <ul>
-              <li>메탈리어</li>
-              <li>이스케이프</li>
-              <li>뭐시기</li>
-            </ul>
-          </div>
-        </div>
-				<div id="games" class="content-block">
-					<div class="content-field">
-						<h2>Games</h2>
-						<div class="game-field">
-							<a href="#"><img src="./image/games/01.png" alt="game01"><br>RT</a>
-						</div>
-					</div>
-				</div>
-        <div id="project" class="content-block">
-          <div class="content-field">
-            <h2>Project</h2>
-            <ul>
-              <li><a href="https://github.com/zer0pen/zer0pen.github.io" target="_blank">ZeroEngine</a></li>
-              <li><a href="https://github.com/zer0pen/ZeroEngine" target="_blank">zer0pen.github.io</a></li>
-							<a href="https://github.com/zer0pen/" target="_blank">See more</a>
-            </ul>
-          </div>
-        </div>
-        <div id="contact" class="content-block">
-          <div class="content-field">
-            <h2>Contact</h2>
-            대한민국 서울특별시 용산구 원효로 97길 33-4 3관 10 컴퓨터실<br><br>
-            <a href="http://www.facebook.com/zer0pen/" target="_blank"><button type="button" class="btn btn-primary">Facebook</button></a>
-            <a href="http://github.com/zer0pen/" target="_blank"><button type="button" class="btn btn-default">Github</button></a>
-          </div>
-        </div>
-        <div class="content-block" style="margin-bottom: 0;">
-          <div class="content-field copyright">
-            copyright © 2014 by <a href="https://github.com/zer0pen" target="_blank">ZER0PEN</a>
-          </div>
+    </div>
+  </nav>
+
+  <div id="container-content" class="container">
+    <section id="section-logo" class="post">
+      <div id="logo">
+        <img id="title" src="./image/logo.png" class="img-responsive">
+        <div class="fb-like" data-href="https://www.facebook.com/zer0pen/" data-layout="button_count"
+             data-action="like" data-show-faces="true" data-share="true"></div>
+        <br />
+        <br />
+        <p id="subtitle">
+          <span class="yellow">선린인터넷고등학교 게임 개발 동아리</span>에 오신 것을 환영합니다 :)
+        </p>
+      </div>
+    </section>
+
+    <section id="section-about" class="post">
+      <div class="post-thumb">
+        <a href="http://thenounproject.com/term/code/38321/" title="원본 출처로 가기">
+          <img src="./image/icons/open_source.png" class="icon hidden-xs">
+        </a>
+      </div>
+      <div class="post-content">
+        <h1 class="name">About</h1>
+        <div class="description">
+          <p><span class="yellow">ZER0PEN</span>은 선린인터넷고등학교의 <span class="yellow">게임 개발 동아리</span>입니다.
+          오픈소스 동아리 <span class="yellow">levdev</span>에서 시작되었으며, 현재는 <span class="yellow">
+          게임 개발</span>을 하고 있습니다. </p><p><span class="yellow">ZER0PEN</span>의 <span class="yellow">ZER0</span>는
+          컴퓨터 언어가 0과 1로 구성되어 있다는 점에서 가져오게 되었고, <span class="yellow">0PEN</span>은 오픈소스 개발을
+          지향한다는 점에서 가져오게 되었습니다.</p>
         </div>
       </div>
-    <!--</div>-->
-	</body>
+    </section>
+
+    <section id="section-award" class="post">
+      <div class="post-thumb">
+        <a href="http://thenounproject.com/term/trophy/9234/" title="원본 출처로 가기">
+          <img src="./image/icons/award.png" class="icon hidden-xs">
+        </a>
+      </div>
+      <div class="post-content">
+        <h1 class="name">Award</h1>
+        <div class="description">
+          <h3>2014년</h3>
+          <ul>
+            <li>코리아 Wi.콘텐츠 콘테스트 <b>KWC</b> <span class="yellow">동상 1</span></li>
+            <li>
+              교내 디지털콘텐츠경진대회 응용 부문 <span class="yellow">대상 1, 금상 1, 은상 3, 동상 3</span>,
+              웹 부문 <span class="yellow">대상 1, 금상 1, 은상 1, 동상 1</span>
+            </li>
+          </ul>
+
+          <!-- Reference: https://prezi.com/bxoj6gxtfsz-/2014-zer0pen/ -->
+          <h3>2013년</h3>
+          <ul>
+            <li>글로벌 게임 경진대회 <b>GGDC</b> <span class="yellow">장려상</span></li>
+            <li>정보올림피아드 공모대회 <span class="yellow">동상</span></li>
+            <li>교내 디지털콘텐츠경진대회 <span class="yellow">대상, 금상, 은상, 동상</span></li>
+            <li><span class="yellow">2년 연속 최우수 동아리 선정</span></li>
+          </ul>
+
+          <h3>2012년</h3>
+          <ul>
+            <li>교내 디지털콘텐츠경진대회 <span class="yellow">대상, 금상, 은상, 동상</span></li>
+            <li><span class="yellow">최우수 동아리 선정</span></li>
+          </ul>
+
+          <!-- Reference: https://prezi.com/dqh22faax5at/zer0pen-ppt/ -->
+          <h3>2011년</h3>
+          <ul>
+            <li>
+              교내 디지털콘텐츠경진대회 웹 부문 <span class="yellow">대상</span>,
+              응용 부문 <span class="yellow">대상, 금상, 은상, 동상</span>
+            </li>
+            <li>코리아 Wi.콘텐츠 콘테스트 <b>KWC</b> <span class="yellow">장려상</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="section-project" class="post">
+      <div class="post-thumb">
+        <a href="http://thenounproject.com/term/construction/29489/" title="원본 출처로 가기">
+          <img src="./image/icons/project.png" class="icon hidden-xs">
+        </a>
+      </div>
+      <div class="post-content">
+        <h1 class="name">Project</h1>
+        <div class="description">
+          <h3>현재 진행 중인 프로젝트</h3>
+          <ul>
+            <li>
+              <a href="https://github.com/zer0pen/ZeroEngine">ZeroEngine</a> <span class="text-muted">|</span>
+              C++ / DirectX 게임 엔진 프레임워크
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer id="footer">
+    <div class="container">
+      <p class="text-muted">
+        서울특별시 용산구 원효로 97길 33-4 선린인터넷고등학교 3호관 컴퓨터 10실 |
+        <a href="http://www.facebook.com/zer0pen/">Facebook</a> |
+        <a href="http://github.com/zer0pen/">Github</a><br />
+        Copyright (C) 2006-2014 by ZER0PEN. All rights reserved.
+        This site is <a href="https://github.com/zer0pen/zer0pen.github.io">hosted on GitHub.</a>
+      </p>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="./bower_components/jquery/jquery.min.js"></script>
+  <script type="text/javascript" src="http://arrow.scrolltotop.com/arrow66.js"></script>
+  <script type="text/javascript" src="./bower_components/jquery-viewport-checker/src/jquery.viewportchecker.js"></script>
+  <script type="text/javascript" src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="./script/script.js"></script>
+</body>
 </html>
+<!-- 개발 시작: 2014-12-15 22:59 -->
+<!-- 개발 끝: 2014-12-23 01:31 -->

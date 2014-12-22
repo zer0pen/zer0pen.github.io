@@ -1,104 +1,214 @@
+@charset "UTF-8";
+@import url('http://fonts.googleapis.com/css?family=Maven+Pro');
+
+/* 웹폰트 로드 시작 */
 @font-face{
-  font-family: "NanumGothic";
-  src: url("../font/NanumGothic-Regular.ttf");
+  font-family: "Lora";
+  src: url('../font/LexiSaebomR.eot');
+  src: url('../font/LexiSaebomR.eot?#iefix') format('embedded-opentype');
+  src: url('../font/LexiSaebomR.woff') format('woff');
+}
+/* 웹폰트 로드 끝 */
+
+/* 전체적 분위기 설정 시작 */
+* {
+  font-family: "맑은 고딕", "Malgun Gothic", "나눔고딕", "NanumGothic", "AppleSDGothic", sans-serif;
+  color: #CFCFCF;
+  font-weight: 100;
 }
 
-@media all and (min-width:768px){
-  .navi-content{
-    display: block;
-  }
-  .top-imgbg-text-1{
-    font-size: 4em;
-  }
-  .top-imgbg-text-2{
-    font-size: 1.8em;
-  }
-  .content-field{
-    width: 60%;
-    left: 20%;
+body {
+  background-color: #262626;
+}
+
+.yellow {
+  color: #f2f45f;
+}
+
+.hidden-scroll {
+  opacity: 0;
+}
+
+.visible-scroll {
+  opacity: 1;
+}
+
+.fb-like {
+  display: block;
+  float: right;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+/* 전체적 분위기 설정 끝 */
+
+/* 네비게이션 바 시작 */
+nav {
+  -moz-animation-name: dropHeader;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-timing-function: ease-in-out;
+  -moz-animation-duration: 0.3s;
+
+  -webkit-animation-name: dropHeader;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-duration: 0.3s;
+
+  animation-name: dropHeader;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.3s;
+}
+/* 네비게이션 바 끝 */
+
+/* 섹션 공통 부분 시작 */
+.container section:nth-child(n+2) {
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1), 0 0 1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  background-color: #333;
+  border-radius: 3px;
+  padding: 9px 23px;
+}
+
+.description, .description *, #subtitle, #subtitle * {
+  font-size: 19px;
+  font-family: "Lora";
+}
+
+.container ul {
+  list-style-type: none;
+  font-size: 18px;
+}
+
+#container-content ul li:before {
+  content: "–";
+  position: absolute;
+  margin-left: -1.1em;
+}
+
+.name {
+  display: inline-block;
+  font-family: "Maven Pro";
+  font-size: 60px;
+  color: #888;
+  margin-top: 5px;
+}
+
+.icon {
+  width: 130px;
+  float: right;
+  position: absolute;
+  z-index: 1;
+}
+
+.description {
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .description {
+    margin-right: 200px;
   }
 }
 
-@media all and (max-width: 767px){
-  .navi-content{
-    display: none;
+.description * {
+  z-index: 2;
+}
+
+section {
+  overflow: auto;
+  position: relative;
+}
+/* 섹션 공통 부분 끝 */
+
+/* About 섹션 시작 */
+#section-about .icon {
+  right: 22px;
+  bottom: 20px;
+}
+
+#section-about .description {
+  margin-top: 16px;
+}
+/* About 섹션 끝 */
+
+/* Award 섹션 시작 */
+#section-award .icon {
+  right: 22px;
+  bottom: 20px;
+}
+/* Award 섹션 끝 */
+
+/* Project 섹션 시작 */
+#section-project .icon {
+  right: 22px;
+  bottom: 20px;
+}
+/* Project 섹션 끝 */
+
+/* 로고 섹션 시작 */
+#section-logo {
+  height: 768px;
+}
+
+#section-logo #logo {
+  padding-top: 150px;
+}
+
+/* 모바일에서 공백이 너무 많이 출력되는 현상 수정  */
+@media screen and (max-width: 767px) {
+  #section-logo {
+    height: 500px;
   }
-  .top-imgbg-text-1{
-    font-size: 3em;
-  }
-  .top-imgbg-text-2{
-    font-size: 1.2em;
-  }
-  .content-field{
-    width: 80%;
-    left: 10%;
+
+  #section-logo #logo {
+    padding-top: 75px;
   }
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 568px){
-  .top-imgbg-text-1{
-    font-size: 2em;
-  }
-  .top-imgbg-text-2{
-    font-size: 0.8em;
-  }
+#section-logo #logo #subtitle {
+  padding-top: 60px;
+  padding-right: 3%;
+  padding-left: 25%;
+  font-size: 19px;
+  float: right;
 }
+/* 로고 섹션 끝 */
 
-body{
-  margin: 0;
-  font-family: "NanumGothic", sans-serif;
-  background-color: rgb(248, 248, 248);
-}
-
-.contain{
-  position: fixed;
-  overflow: scroll;
+/* Footer 시작 */
+#footer {
   width: 100%;
-  background-color: rgb(248, 248, 248);
+  min-height: 60px;
+  background-color: #222;
 }
 
-.top-imgbg{
-  position: relative;
-  width: 100%;
-  height: 100%;
-  background: url("../image/title/0.jpg") no-repeat center center;
-  background-size: cover;
+#footer .text-muted {
+  margin: 20px 0;
 }
+/* Footer 끝 */
 
-.top-imgbg-text{
-  position: relative;
-  text-align: right;
-  top: 70%;
-  width: 50%;
-  left: 38%;
-  color: white;
-  text-shadow: 0.2em 0.2em gray;
-  font-weight: bold;
+/* 애니메이션 키 프레임 시작 */
+@-moz-keyframes dropHeader {
+  0% {
+    -moz-transform: translateY(-50px);
+  }
+  100% {
+    -moz-transform: translateY(0);
+  }
 }
-
-.content{
-  position: relative;
-  background-color: rgb(248, 248, 248);
-  padding-top: 2em;
+@-webkit-keyframes dropHeader {
+  0% {
+    -webkit-transform: translateY(-50px);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+  }
 }
-
-.content-block{
-  margin-top: 5em;
-  margin-bottom: 5em;
+@keyframes dropHeader {
+  0% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
-
-.content-field{
-  position: relative;
-  font-size: 1.5em;
-}
-
-.game-field{
-  width: 30%;
-  text-align: center;
-}
-
-.copyright{
-  text-align: center;
-  font-size: 1em;
-  margin: 1em 0 1em 0;
-}
+/* 애니메이션 키 프레임 끝 */
