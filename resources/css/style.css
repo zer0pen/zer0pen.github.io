@@ -17,6 +17,14 @@
   font-weight: 100;
 }
 
+a {
+  color: #19BDCF;
+}
+
+a:hover {
+  color: #1870CF;
+}
+
 body {
   background-color: #262626;
 }
@@ -144,6 +152,17 @@ section {
   bottom: 20px;
 }
 /* Project 섹션 끝 */
+
+/* Game 섹션 시작 */
+#section-game .icon {
+  right: 22px;
+  bottom: 20px;
+}
+
+#section-game .description {
+  margin-top: 16px;
+}
+/* Game 섹션 끝 */
 
 /* 로고 섹션 시작 */
 #section-logo {
