@@ -4,9 +4,9 @@
 /* 웹폰트 로드 시작 */
 @font-face{
   font-family: "Lora";
-  src: url('../font/LexiSaebomR.eot');
-  src: url('../font/LexiSaebomR.eot?#iefix') format('embedded-opentype');
-  src: url('../font/LexiSaebomR.woff') format('woff');
+  src: url('../fonts/LexiSaebomR.eot');
+  src: url('../fonts/LexiSaebomR.eot?#iefix') format('embedded-opentype');
+  src: url('../fonts/LexiSaebomR.woff') format('woff');
 }
 /* 웹폰트 로드 끝 */
 
