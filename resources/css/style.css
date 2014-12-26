@@ -17,12 +17,13 @@
   font-weight: 100;
 }
 
-a {
+a, a:visited {
   color: #19BDCF;
 }
 
-a:hover {
-  color: #1870CF;
+a:hover, a:focus {
+  color: #276C8B;
+  text-decoration: blink;
 }
 
 body {
