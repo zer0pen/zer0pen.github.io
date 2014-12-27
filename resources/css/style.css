@@ -30,6 +30,10 @@ body {
   background-color: #262626;
 }
 
+p {
+  word-break: break-all;
+}
+
 .yellow {
   color: #f2f45f;
 }
@@ -47,6 +51,25 @@ body {
   float: right;
   margin-top: 20px;
   margin-right: 20px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  width: 30px;
+  height: 30px;
 }
 /* 전체적 분위기 설정 끝 */
 
@@ -239,19 +262,69 @@ section {
     width: 90%;
   }
 }
+
 .modal .modal-body {
   overflow-y: auto;
-  max-width: 1280px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
 .modal-title {
-  color: #222;
   font-family: "Lora";
 }
 
-.modal-body * {
-  color: #333333;
+.modal-content {
+  background-color: #272727;
+}
+
+.modal-content * {
+  color: #cfcfcf;
+  font-family: "Lora";
+}
+
+.modal-content img {
+  margin-bottom: 20px;
+}
+
+.modal-content p {
+  font-size: 18px;
+  width: 95%;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.modal-content p:before {
+  content: "\00a0 \00a0 ";
+}
+
+.modal-header {
+  border-bottom-color: #444;
+}
+
+.description-title {
+  font-family: "Maven Pro";
+  font-size: 60px;
+  color: #888;
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+/* http://embedresponsively.com/ */
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+}
+
+.embed-container iframe, .embed-container object, .embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 /* 팝업 끝 */
 

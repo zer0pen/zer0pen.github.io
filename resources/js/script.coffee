@@ -31,7 +31,7 @@ $ '.modal'
             .find ".modal-body"
             .css "max-height", height
 
-$ '.post'
+$ '.animate'
     .addClass "hidden-scroll"
     .viewportChecker
         classToAdd: "visible-scroll animated fadeIn"

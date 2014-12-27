@@ -30,7 +30,7 @@ ga('send', 'pageview');;
     return $(this).find(".modal-body").css("max-height", height);
   });
 
-  $('.post').addClass("hidden-scroll").viewportChecker({
+  $('.animate').addClass("hidden-scroll").viewportChecker({
     classToAdd: "visible-scroll animated fadeIn",
     offset: 100
   });
