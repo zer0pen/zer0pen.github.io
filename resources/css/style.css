@@ -283,12 +283,17 @@ section {
 }
 
 .modal-content img {
-  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: initial;
 }
 
-.modal-content p {
+.modal-content img.img-thumbnail {
+  border-color: #444;
+}
+
+.modal-body * {
   font-size: 18px;
-  width: 95%;
   margin: 0 auto;
   margin-bottom: 15px;
 }
