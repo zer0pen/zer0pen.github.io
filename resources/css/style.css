@@ -298,10 +298,6 @@ section {
   margin-bottom: 15px;
 }
 
-.modal-content p:before {
-  content: "\00a0 \00a0 ";
-}
-
 .modal-header {
   border-bottom-color: #444;
 }
