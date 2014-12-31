@@ -13,7 +13,24 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 ga('create', 'UA-56669999-2', 'auto');
 ga('send', 'pageview');;
-  $('.post').addClass("hidden-scroll").viewportChecker({
+  $('.activate-modal').click(function() {
+    $(".modal-title").html($(this).data("title"));
+    $(".modal-body").html("<div id=\"loading\"></div>");
+    return $.ajax({
+      url: $(this).data('link'),
+      complete: function(data, status) {
+        return $(".modal-body").html(data.responseText);
+      }
+    });
+  });
+
+  $('.modal').on("show.bs.modal", function() {
+    var height;
+    height = $(window).height() - 120;
+    return $(this).find(".modal-body").css("max-height", height);
+  });
+
+  $('.animate').addClass("hidden-scroll").viewportChecker({
     classToAdd: "visible-scroll animated fadeIn",
     offset: 100
   });

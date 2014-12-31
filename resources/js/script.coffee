@@ -12,7 +12,26 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 ga('create', 'UA-56669999-2', 'auto');
 ga('send', 'pageview');`
 
-$ '.post'
+$ '.activate-modal'
+    .click ->
+        $ ".modal-title"
+            .html $(this).data "title"
+        $ ".modal-body"
+            .html "<div id=\"loading\"></div>"
+        $.ajax
+            url: $(this).data('link')
+            complete: (data, status) ->
+                $ ".modal-body"
+                    .html data.responseText
+
+$ '.modal'
+    .on "show.bs.modal", ->
+        height = $(window).height() - 120
+        $ this
+            .find ".modal-body"
+            .css "max-height", height
+
+$ '.animate'
     .addClass "hidden-scroll"
     .viewportChecker
         classToAdd: "visible-scroll animated fadeIn"

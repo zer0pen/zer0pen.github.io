@@ -1,0 +1,84 @@
+<h2 class="description-title">Light It Up</h2>
+<ol>
+  <li>개발 동기 및 기대 효과</li>
+  <p>
+    처음엔 총탄이 오가는 슈팅게임을 생각해보았는데 식상할뿐더러 잔인성이 묻어나올 것 같아 다른 방법을 모색해본 결과 폭죽을 쏘는 것은 어떨까 생각해보았습니다. 여러 색의 불꽃으로 폭발범위를 피하며 대전하는 구도라면 처음에 생각했던 화려함과 스릴감 그리고 건전성을 동시에 가져갈 수 있을 것 같아 만족스러웠고 관련 사전조사를 하면서 알지 못했던 폭죽의 종류도 존재한다는 점에서 여러모로 신기했습니다.
+  </p>
+  <p>
+    무엇보다 가장 살리고 싶었던 요소는 어렸을 때 친구들과 한 개의 컴퓨터로 2인 플레이 게임을 즐기며 즐거웠던 때를 떠올리며 2P 대전 게임의 느낌을 최대한 살리는데 (메인에서 메뉴 선택 시 마우스가 아닌 방향키로 선택하는 것 등) 비중을 두었습니다.
+  </p>
+  <li>제작 과정</li>
+  <table class="table table-condensed">
+    <thead>
+      <tr>
+        <th>날짜</th>
+        <th>개발 계획</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>2014-10-02</td>
+        <td>팀 결성</td>
+      </tr>
+      <tr>
+        <td>2014-10-15</td>
+        <td>폭죽슈팅게임 컨셉 결정</td>
+      </tr>
+      <tr>
+        <td>2014-10-19</td>
+        <td>파티클 구현</td>
+      </tr>
+      <tr>
+        <td>2014-10-22</td>
+        <td>충돌 처리 완료</td>
+      </tr>
+      <tr>
+        <td>2014-10-25</td>
+        <td>맵, 이미지 적용</td>
+      </tr>
+      <tr>
+        <td>2014-10-29</td>
+        <td>최종 점검</td>
+      </tr>
+    </tbody>
+  </table>
+  <li>메인 메뉴</li>
+  <p>
+    <img src="./resources/images/games/2014/light_it_up/01.png" class="img-responsive img-thumbnail center-block">
+    메뉴는 각 3개의 버튼으로 구성되며 뒷 배경에는 파티클이 장식하고 있습니다.
+  </p>
+  <li>게임 분류</li>
+  <p>2인용 슈팅 게임</p>
+  <li>게임 화면</li>
+  <p>
+    <img src="./resources/images/games/2014/light_it_up/02.png" class="img-responsive img-thumbnail center-block">
+    조작키 : 아래와 같으며 무기선택 후 버튼 B를 눌러 게임으로 넘어가며 대부분의 메뉴 선택은 스페이스 바로 진행됩니다.
+
+    배경을 해가 진 어두운 분위기로 연출하여 불꽃의 이펙트가 부각되게 만들었습니다. 캐릭터는 양쪽 끝에서 서로를 겨냥하여 폭죽 탄환을 쏘며 플레이어는 점프를 사용하여 피할 수 있습니다.<br /><br />
+    <img src="./resources/images/games/2014/light_it_up/03.png" class="img-responsive img-thumbnail center-block">
+    HP : 체력수치 100이고 각 캐릭터의 상단에 위치하며 0이 되면 승패가 결정 됩니다.
+
+    <img src="./resources/images/games/2014/light_it_up/04.png" class="img-responsive img-thumbnail center-block">
+    게임 엔딩 : 두 플레이어의 게임의 결과를 보여줍니다. 스페이스 바를 누르면 다시 메인으로 돌아갑니다.
+  </p>
+  <li>게임 기능</li>
+  <p>
+    맵 선택 : 맵은 바다, 네온사인, 언덕 세 개로 이루어져있습니다. Q, E를 통해 옆으로 넘기기가 가능하며 스페이스 바로 선택합니다.
+    <img src="./resources/images/games/2014/light_it_up/05.png" class="img-responsive img-thumbnail center-block">
+    <img src="./resources/images/games/2014/light_it_up/06.png" class="img-responsive img-thumbnail center-block">
+    <img src="./resources/images/games/2014/light_it_up/07.png" class="img-responsive img-thumbnail center-block">
+  </p>
+  <p>
+    무기 선택 : 현재 구현된 7가지 무기 중 3개의 무기를 선택할 수 있으며 지형에 따라 특화된 무기, 데미지와 리스크가 공존하는 무기들이 있으니 신중한 선택이 요구됩니다.<br />무기 선택 키 : 조작키로 움직이며 발사 버튼으로 무기를 고르고 3개의 무기가 모두 선택되면 키보드 B키를 눌러 게임을 시작합니다.
+    <img src="./resources/images/games/2014/light_it_up/08.png" class="img-responsive img-thumbnail center-block">
+    <img src="./resources/images/games/2014/light_it_up/09.png" class="img-responsive img-thumbnail center-block">
+    <img src="./resources/images/games/2014/light_it_up/10.png" class="img-responsive img-thumbnail center-block">
+    <img src="./resources/images/games/2014/light_it_up/11.png" class="img-responsive img-thumbnail center-block">
+    <img src="./resources/images/games/2014/light_it_up/12.png" class="img-responsive img-thumbnail center-block">
+    <img src="./resources/images/games/2014/light_it_up/13.png" class="img-responsive img-thumbnail center-block">
+    <img src="./resources/images/games/2014/light_it_up/14.png" class="img-responsive img-thumbnail center-block">
+    <img src="./resources/images/games/2014/light_it_up/15.png" class="img-responsive img-thumbnail center-block">
+  </p>
+  <li>디자인 컨셉</li>
+  <p>심플한 컨셉으로 폭죽의 불꽃은 도트의 파티클을 사용하여 아름답게 표현하였습니다. 게임 배경은 밝은 파티클이 돋보이게 해가진 어두운 컨셉으로 하게 되었고 바닷가와 언덕의 선택은 실제로 불꽃놀이를 즐기기에 가장 안전하고 적합한 장소라 생각하여 결정하게 되었습니다. 또한 불꽃놀이의 화려함을 표현하기위해 발사할 때 마다 랜덤으로 불꽃의 색깔을 바꿔줘서 화려한 느낌이 상도록 하였습니다.</p>
+</ol>

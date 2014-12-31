@@ -1,0 +1,139 @@
+<h2 class="description-title">Slash and Madness</h2>
+<ol>
+  <li>개발 동기 및 기대 효과</li>
+  <p>
+    본 게임은 핵 앤 슬래시 + 로그라이크-라이크 장르의 게임으로 주인공에게 달려드는 적들을 칼로 무찌르는 게임입니다. 핵 앤 슬래시 게임이란 게임의 스토리와 같은 다른 요소의 표현은 철저하게 배제한 채 오직 몬스터를 사냥하고 아이템을 수집하는 것을 강조한 게임을 뜻하고, 로그라이크-라이크 게임이란 로그라이크 장르에서 파생되어 나온, 일반적으로 저장이 없고 죽지 않으면서 오래 살아남는 것을 목적으로 하는 게임입니다. 저희는 이 두 장르를 결합하여 과거 문방구 앞 오락실에서 찾을 수 있었던, 순수한 순간적 재미와 점수 경쟁을 유발할 수 있는 이 게임을 기획·개발하게 되었습니다.
+  </p>
+  <li>제작 과정</li>
+  <table class="table table-condensed">
+    <thead>
+      <tr>
+        <th>날짜</th>
+        <th>개발 계획</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>2014-9-20</td>
+        <td>기능반 엔진 제작</td>
+      </tr>
+      <tr>
+        <td>2014-10-15</td>
+        <td>타일 정보 읽어오기 및 최적화된 타일맵 구현<br />플레이어 기본 움직임(좌우 이동, 점프) 구현<br />카메라 흔들림 기능 구현</td>
+      </tr>
+      <tr>
+        <td>2014-10-16</td>
+        <td>타일맵 충돌 및 2단 점프 구현</td>
+      </tr>
+      <tr>
+        <td>2014-10-17</td>
+        <td>일정과 작업 관리에 트렐로(Trello) 도입</td>
+      </tr>
+      <tr>
+        <td>2014-10-20</td>
+        <td>아이디어 1차 회의<br />그래픽 작업 목록 세부 설정</td>
+      </tr>
+      <tr>
+        <td>2014-10-23</td>
+        <td>플레이어 공중 대시 공격 구현</td>
+      </tr>
+      <tr>
+        <td>2014-10-24</td>
+        <td>콤보 시스템 구현<br />파티클을 이용한 플레이어 잔상 구현<br />아이템 드랍, 획득 및 효과 발동 구현<br />적 1, 2의 이동, 공격 애니메이션 모델링</td>
+      </tr>
+      <tr>
+        <td>2014-10-25</td>
+        <td>플레이어 이동, 도약, 횡방향 베기, 대각선 베기 애니메이션 모델링<br />적 3의 이동, 공격 애니메이션 모델링<br />아이템 획득 시 파티클 효과 구현<br />아이디어 2차 회의</td>
+      </tr>
+      <tr>
+        <td>2014-10-26</td>
+        <td>평지에서 칼 휘두를 시의 이펙트 디자인</td>
+      </tr>
+      <tr>
+        <td>2014-10-27</td>
+        <td>애니메이션 적용<br />보스 이동, 공격 애니메이션 모델링</td>
+      </tr>
+      <tr>
+        <td>2014-10-28</td>
+        <td>시간에 따른 난이도 조절 구현<br />난이도에 따른 적 랜덤소환 구현<br />적 1, 2, 3 이동, 공격 구현</td>
+      </tr>
+      <tr>
+        <td>2014-10-29</td>
+        <td>돈 시스템 구현<br />상자 구매 시스템 구현<br />플레이어 위치에 따른 배경 이동 구현<br />나머지 애니메이션 적용</td>
+      </tr>
+    </tbody>
+  </table>
+  <li>메인 메뉴</li>
+  <p>
+    <img src="./resources/images/games/2014/slash_and_madness/01.png" class="img-responsive img-thumbnail center-block">
+    프로그램을 시작하면 위와 같은 메인 화면이 뜨게 됩니다. Slash & Madness 라는 타이틀과 함께 세 개의 버튼이 있으며 각각 게임 시작, 게임 조작 설명, 게임 끝내기 버튼입니다. 배경은 게임 속에 존재하는 캐릭터와 건물이 있으며 뒤의 그림을 통해 게임 세계관이 미래라는 것을 알 수 있게 했습니다.
+  </p>
+  <li>게임 조작 설명</li>
+  <p>
+    <img src="./resources/images/games/2014/slash_and_madness/02.png" class="img-responsive img-thumbnail center-block">
+    캐릭터는 키보드의 좌, 우 방향키로 움직일 수 있고, 위 방향키를 누르면 최대 2단까지 점프를 하며 이때 아래 방향키를 누르면 아래로 빠르게 떨어지며 칼로 내려찍는 애니메이션과 함께 주변의 적들에게 데미지를 줍니다. 또한 X키를 누르면 상자를 열 수 있습니다.
+  </p>
+  <p>
+    <img src="./resources/images/games/2014/slash_and_madness/03.png" class="img-responsive img-thumbnail center-block">
+    위 방향키를 눌러 공중에 뜬 상태에서 Z키를 누르면 캐릭터가 대시공격을 합니다. 또한 공중에 뜬 상태에서 쉬프트키를 누르면 빠른 속도로 앞으로 이동하는 도약 점프를 사용합니다. 땅 위에서 아래 방향키를 누른 채로 Z키를 누르면 칼에 맞은 적은 공중에 띄워집니다.
+  </p>
+  <p>
+    <img src="./resources/images/games/2014/slash_and_madness/04.png" class="img-responsive img-thumbnail center-block">
+    UI: 캐릭터의 HP 수치, 캐릭터가 현재 가지고 있는 금액, 게임 난이도와 게임 경과 시간을 표시해줍니다.
+  </p>
+  <p>
+    <img src="./resources/images/games/2014/slash_and_madness/05.png" class="img-responsive img-thumbnail center-block">
+    아이템 칸: 맵에 중간중간 있는 상자를 열어서 나온 아이템이나 적을 죽였을 때 나온 아이템을 캐릭터가 먹었을 때 화면 상단에 먹은 아이템의 이미지가 나타납니다.
+  </p>
+  <li>게임 세부 설명</li>
+  <p>
+    <img src="./resources/images/games/2014/slash_and_madness/06.png" class="img-responsive img-thumbnail center-block">
+    모든 적은 기본적으로 시야반경 내에 있는 캐릭터를 공격하려고 합니다. 적에게 공격받지 않을 때 캐릭터는 일정 시간마다 체력 회복을 합니다.
+  </p>
+  <p>
+    <img src="./resources/images/games/2014/slash_and_madness/07.png" class="img-responsive img-thumbnail center-block">
+    캐릭터가 적을 파괴했을 때 적은 터지며 돈을 떨어트립니다.
+  </p>
+  <p>
+    <img src="./resources/images/games/2014/slash_and_madness/08.png" class="img-responsive img-thumbnail center-block">
+    적이 죽을 때는 일정한 확률로 아이템이 나타납니다. 하지만 확률이 작기 때문에 빠르게 올라가는 난이도에 맞춰 캐릭터를 강화시키기 위해서는 아이템을 이용해야 합니다.
+  </p>
+  <p>
+    <img src="./resources/images/games/2014/slash_and_madness/09.png" class="img-responsive img-thumbnail center-block">
+    맵 구석구석에 배치되어 있는 상자는 20원으로 열 수 있습니다. 상자에서는 무조건 아이템이 나오지만 어떤 아이템이 나올지는 알 수 없습니다. 아이템은 총 5종이 있으며 그 종류는 후술된 [기타 정보]에 자세히 나와 있습니다.
+  </p>
+  <p>
+    이 게임에서 적은 세 종류로 나뉩니다.
+    <img src="./resources/images/games/2014/slash_and_madness/10.png" class="img-responsive img-thumbnail center-block">
+    플레이어를 따라다니면서 작지만 지속적으로 데미지를 주는 드론과,
+  </p>
+  <p>
+    <img src="./resources/images/games/2014/slash_and_madness/11.png" class="img-responsive img-thumbnail center-block">
+    중간 정도의 데미지를 가진 3연발 발사체를 쏘는 터렛, 그리고
+  </p>
+  <p>
+    <img src="./resources/images/games/2014/slash_and_madness/12.png" class="img-responsive img-thumbnail center-block">
+    강력한 근접공격을 선사하는 가디언입니다.
+  </p>
+  <p>
+    각각의 적에게는 그에 맞는 격파법이 있습니다.
+    예를 들어 가디언은 많은 체력과 강한 근접 공격력을 가지고 있지만 공중에서는 힘을 쓰지 못하므로 적이 땅에 붙어있는 시간을 최대한 줄이면 쉽게 공략할 수 있습니다. 그 외에도 도약 점프를 이용하여 회피를 하며 체력을 벌어 많은 적을 한번에 상대하거나 공중 대쉬를 활용하는 등의 다양한 응용 플레이가 가능하며 자신만의 플레이 방법을 찾는 재미를 얻을 수 있습니다.
+  </p>
+  <p>
+    <img src="./resources/images/games/2014/slash_and_madness/13.png" class="img-responsive img-thumbnail center-block">
+    일단 공중으로 띄워진 적은 플레이어의 먹잇감입니다. 공중 + Z + 방향키와 공중 + 아래를 이용하면 순식간에 분해되는 적을 볼 수 있습니다.
+  </p>
+  <p>
+    <img src="./resources/images/games/2014/slash_and_madness/14.png" class="img-responsive img-thumbnail center-block">
+    <img src="./resources/images/games/2014/slash_and_madness/15.png" class="img-responsive img-thumbnail center-block">
+    일정 시간 내에 연속된 공격을 성공할 경우 콤보의 수치가 높아지고, 이 콤보는 점수에 반영될 뿐만 아니라 아이템 ‘광기의 물약’과 함께하면 콤보의 수치가 공격력에 반영되므로 더욱 강력한 공격을 할 수 있게 됩니다.
+  </p>
+  <p>
+    <img src="./resources/images/games/2014/slash_and_madness/16.png" class="img-responsive img-thumbnail center-block">
+    캐릭터가 죽게 되면 지금까지의 플레이와 관련된 모든 수치를 모아 하나의 점수로 환산하여 보여주게 됩니다.
+  </p>
+  <li>디자인 컨셉</li>
+  <p>
+    좀 더 리얼하고 현실감 있는 그래픽을 선호하는 시대가 오게 되었고 게임 그래픽은 3D가 점점 많아지기 시작했습니다. 그래서 저희는 3ds Max를 사용하여 3D 그래픽 작업을 하게 되었고 아기자기한 느낌을 살리기 위해 캐릭터를 귀엽게 제작하였습니다.
+  </p>
+</ol>
