@@ -1,0 +1,120 @@
+<h2 class="description-title">Metalier</h2>
+<ol>
+  <li>개발 동기 및 기대 효과</li>
+  <p>
+    시점을 달리하면 흔하고 뻔한 것들도 새로이 보인다. ‘창의적인 의견’은 대개 같은 사물을 여러 시각에서 보는 것에서부터 시작한다.
+  </p>
+  <p>
+    이 게임을 기획하기 전부터 기획자는 ‘흔하고 뻔한 RPG’에 대해서 조금 다른 시각에서 보고 있었다. 모 게임에서 NPC로 유저의 캐릭터를 채용하는 경우를 보았는데, 그 때 내 캐릭터보다 NPC 캐릭터가 더 탐이 났었다. 게임에 등장하는 NPC들로 게임을 해보고 싶었다. NPC들이 답답하지 않을까? 하고도 생각했었다. (이것은 무려 지금으로부터 얼마 되지 않은 이야기이다.)
+  </p>
+  <p>
+    이 게임은 RPG의 주인공(Roll-Playing의 대상자) 아닌 그 주변 조력자, NPC로만 등장해왔던 상점주인의 시점에서 플레이하는 경영게임이다. 타이틀 ‘Metalier’의 뜻은 철(Metal)과 공방(Atelier)의 합성어로 철의 공방, 즉 대장간을 말한다. 채석부터 강화까지 장비의 탄생과 일생을 유저의 손으로 일궈나간다. 주인공을 둘러싼 이야기를 따라 읊어가며 이 나라의 장인이 되자.
+  </p>
+  <li>제작 과정</li>
+  <table class="table table-condensed">
+
+    <thead>
+      <tr>
+        <th>날짜</th>
+        <th>개발 계획</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>2011-10 중순</td><td>이전에 RPG를 기획했으나 백지화하고 Metalier를 새로 기획하였다. <br>팀원들이 모두 모여 시나리오의 큰 틀을 구상했다.</td></tr>
+      <tr><td>2011-10 하순</td><td>각자 맡은 일을 시작했다.</td></tr>
+      <tr><td>2011-11-10</td><td>기본적인 시스템을 정비하고 UI를 재설정했다. <br>모든 작업이 동시에 진행되었다.<br> 큰 틀만 잡아두었던 게임시스템에 대한 항목을 코딩으로 점점 구체화시켜갔다.</td></tr>
+      <tr><td>2011-11-18</td><td>아이템 이미지(도트)를 모두 만들었다. <br>미니게임 코딩을 완료했다. <br>기획이 다소 바뀌었다.</td></tr>
+      <tr><td>2011-11-27</td><td>아이템 목록(데이터) 정리를 끝내고, 본게임과 미니게임 연동을 완료했다. <br>시나리오를 본게임과 연동시켰다. <br>그 외 타이틀 제작, 퀘스트 시스템 정비 등등 짧은 기간동안 집중적으로 많은 작업을 했다. <br>반 이상이 이뤄진 것 같다. <br>모두들 밤을 새기도 하고 약을 빨기도 하고(?) 정신없이 지나갔다.</td></tr>
+    </tbody>
+  </table>
+  <li>타이틀 화면</li>
+  <p>
+    <img src="./resources/images/games/2011/metalier/01.jpeg" class="img-responsive img-thumbnail center-block">
+    메인 무대가 될 카운터를 배경으로 한 게임 타이틀 화면이다.<br><br>
+    START : 새로운 게임을 한다.<br>
+    LOAD : 세이브된 파일(SAV.mtr)을 불러와 게임한다.<br>
+    CREDIT : 제작자 정보를 표시한다.<br>
+    EXIT : 게임을 종료한다.<br>
+  </p>
+  <li>기본 UI</li>
+  <p>
+    <img src="./resources/images/games/2011/metalier/02.jpeg" class="img-responsive img-thumbnail center-block">
+    미니게임을 실행하는 동안 이외에는 어느 때나 등장하는 기본 UI이다.<br><br>
+    1. 스테이터스바 : 체력, 스테미너, 경험치, 숙련도를 표시한다. 각각의 칸에 마우스를 오버하면 체력, 스테미너는 잔량을, 경험치, 숙련도는 현재치를 나타낸 게이지바가 오른쪽으로 나온다. 또한 네모칸 안에는 체력, 스테미너, 경험치의 퍼센테이지 수치, 숙련도의 레벨을 표시해준다.<br>
+    2. 이름칸 : 캐릭터의 이름을 표시한다.<br>
+    3. 소지금 : 소지금을 표시한다.<br>
+    4. 인벤토리 : 가지고 있는 아이템 목록을 보여준다.<br>
+    5. 카운터 : 카운터로 이동한다.<br>
+    6. 퀘스트 : 진행중인 퀘스트 목록을 보여준다.<br>
+    7. 시스템 : 사운드 설정 옵션을 조절하고 ★게임을 저장★한다. (게임을 저장하면 mtr파일이 생긴다.)<br>
+    <img src="./resources/images/games/2011/metalier/03.jpeg" class="img-responsive img-thumbnail center-block">
+    ▲ 스테이터스바
+    <img src="./resources/images/games/2011/metalier/04.jpeg" class="img-responsive img-thumbnail center-block">
+    ▲ 인벤토리
+    <img src="./resources/images/games/2011/metalier/05.jpeg" class="img-responsive img-thumbnail center-block">
+    ▲ 시스템
+    <img src="./resources/images/games/2011/metalier/06.jpeg" class="img-responsive img-thumbnail center-block">
+    ▲ 퀘스트창
+  </p>
+  <li>광산맵</li>
+  <p>
+    <img src="./resources/images/games/2011/metalier/07.jpeg" class="img-responsive img-thumbnail center-block">
+    문이 열리는 효과음과 함께 진입하게 되면 처음에는 가장 왼쪽 맵만을 볼 수 있는데, 광산맵은 모두 3구역으로 나누어져 있다. (이미지는 한 장에 합쳐놓은 것으로, 각 구역마다 맵이 따로 구성되어있다.) 안쪽으로 더 깊이 들어갈수록 더 귀한 광물을 채취할 수도 있다.
+    <img src="./resources/images/games/2011/metalier/08.png" class="img-responsive img-thumbnail center-block">
+    ▲ 귀여운 캐릭터가 온화한 미소와 다정한 말투로 유저를 안내해준다. 하지만 이것도 1구역까지만이다.
+  </p>
+  <li>카운터</li>
+  <p>
+    <img src="./resources/images/games/2011/metalier/09.jpeg" class="img-responsive img-thumbnail center-block">
+    Counter버튼을 누르면 열리는 창.<br>
+    Inventory에서 제작으로 만든 장비를 카운터의 빈 아이콘창에 끌어다두면 자동으로 아이템 가격이 책정되면서 그때부터 판매가 시작된다. <br>
+    <img src="./resources/images/games/2011/metalier/10.jpeg" class="img-responsive img-thumbnail center-block">
+    각 아이콘은 미니게임과 연동되어있다.<br>
+    처음에는 ②만 가능하고, 시나리오를 전개하고 퀘스트를 완료해야 나머지 미니게임도 차례차례 열린다. 오픈 순서는 ②→⑤→ⓛ→③→④<br>
+    1. 방패 아이콘 : Click Rush - Lv.20<br>
+    2. 곡괭이 아이콘 : Mine Rush - Lv.1<br>
+    3. 모루 아이콘 : Technique Rush - Lv.30<br>
+    4. 등불 아이콘 : Avoid Rush - Lv.40<br>
+    5. 자루 아이콘 : Assemble Rush - Lv.10<br>
+    아이콘에 마우스를 오버하면 무슨 게임인지 알려준다. 처음 카운터를 보았을때 어리둥절해 마우스 포인터를 이리저리 움직이다 보면 다음과 같은 이미지가 뜰 것이다.<br>
+    <img src="./resources/images/games/2011/metalier/11.png" class="img-responsive img-thumbnail center-block">
+    ▲ 친절하게 안내해준다.
+  </p>
+  <li>미니게임</li>
+  <p>
+    <img src="./resources/images/games/2011/metalier/12.png" class="img-responsive img-thumbnail center-block">
+    <img src="./resources/images/games/2011/metalier/13.jpeg" class="img-responsive img-thumbnail center-block">
+    Mine Rush<br>
+    광산맵에서 등장하며, 제한시간 동안에 Z키와 Space bar를 번갈아 누른다.
+    <img src="./resources/images/games/2011/metalier/14.png" class="img-responsive img-thumbnail center-block">
+    <img src="./resources/images/games/2011/metalier/15.jpeg" class="img-responsive img-thumbnail center-block">
+    Mine Rush<br>
+    제련 작업시 플레이하게되며, 제한시간동안 자루의 끈과 같은 색의 광물을 방향키(상하좌우)로 분류한다.
+    <img src="./resources/images/games/2011/metalier/16.png" class="img-responsive img-thumbnail center-block">
+    <img src="./resources/images/games/2011/metalier/17.jpeg" class="img-responsive img-thumbnail center-block">
+    Click Rush<br>
+    수리 작업시 플레이하게 되며, 제한시간동안 왼쪽/오른쪽 마우스를 제시된 아이콘의 수만큼 클릭한다.
+    <img src="./resources/images/games/2011/metalier/18.png" class="img-responsive img-thumbnail center-block">
+    <img src="./resources/images/games/2011/metalier/19.jpeg" class="img-responsive img-thumbnail center-block">
+    Technique Rush<br>
+    제작 작업시 플레이하게 되며, 제한 시간동안 아이콘의 모양과 일치하는 방향키(상하좌우)를 누른다.
+    <img src="./resources/images/games/2011/metalier/20.png" class="img-responsive img-thumbnail center-block">
+    <img src="./resources/images/games/2011/metalier/21.jpeg" class="img-responsive img-thumbnail center-block">
+    Avoid Rush<br>
+    강화 작업시 플레이하게 되며, 장애물들을 피해 좌우로 움직여 골인.
+    <img src="./resources/images/games/2011/metalier/22.jpeg" class="img-responsive img-thumbnail center-block">
+    <img src="./resources/images/games/2011/metalier/23.jpeg" class="img-responsive img-thumbnail center-block">
+    저작권 상식 테스트<br>
+    일정한 시간간격을 두고 게임중 어느 때라도 랜덤으로 등장한다. 퀴즈이긴 하나 사실 맞출 수밖에 없다. 정답을 맞추지 않으면 넘어가지 않기 때문이다. 지식으로 유저를 차별하지 않기 위해 반드시 맞추게 장치했다.
+    <img src="./resources/images/games/2011/metalier/24.jpeg" class="img-responsive img-thumbnail center-block">
+    완료시<br>
+    미니게임을 완료하면 다음과 같은 보상창이 뜬다.<br>
+    경험치와 숙련도는 기본으로 증가하며, 미니게임에 따른 개별보상은 다음과 같다.<br>
+    Mine Rush : 원석(랜덤)<br>
+    Assemblue Rush : 게임시 소모한 원석을 정제한 정제석<br>
+    Click Rush : (퀘스트로 의뢰받은 수리전 장비에서) 수리된 장비<br>
+    Technique Rush : (제작완료된) 장비<br>
+    Avoid Rush : (퀘스트로 의뢰받은 강화전 장비에서) 강화된 장비<br>
+    저작권 상식 테스트 : 무조건 레벨 * 3의 경험치<br>
+  </p>
+</ol>
