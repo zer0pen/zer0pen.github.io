@@ -123,7 +123,7 @@ nav {
 
 .name {
   display: inline-block;
-  font-family: "Maven Pro";
+  font-family: "Maven Pro", "맑은 고딕", "Malgun Gothic", sans-serif;
   font-size: 60px;
   color: #888;
   margin-top: 5px;
@@ -307,7 +307,7 @@ section {
 }
 
 .description-title {
-  font-family: "Maven Pro";
+  font-family: "Maven Pro", "맑은 고딕", "Malgun Gothic", sans-serif;
   font-size: 60px;
   color: #888;
   margin-top: 5px;
