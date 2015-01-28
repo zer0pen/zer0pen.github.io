@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url('http://fonts.googleapis.com/css?family=Maven+Pro|Open+Sans|Arvo:400,700');
+@import url('http://fonts.googleapis.com/css?family=Maven+Pro|Open+Sans|Noticia+Text:400,700');
 
 /* 웹폰트 로드 시작 */
 @font-face {
@@ -107,7 +107,7 @@ nav {
 
 .description, .description *, #subtitle, #subtitle * {
   font-size: 19px;
-  font-family: "Arvo", "Lora", serif;
+  font-family: "Noticia Text", "Lora", serif;
 }
 
 .container ul {
