@@ -1,0 +1,328 @@
+@import url('http://fonts.googleapis.com/css?family=Maven+Pro|Open+Sans|Noticia+Text:400,700');
+
+$header-footer: "Open Sans", "맑은 고딕", "Malgun Gothic", "나눔고딕", "NanumGothic", "AppleSDGothic", sans-serif;
+$contents: "Noticia Text", "Lora", serif;
+$section-title: "Maven Pro", "맑은 고딕", "Malgun Gothic", sans-serif;
+
+@font-face {
+  font-family: "Lora";
+  src: url('../fonts/LexiSaebomR.eot');
+  src: url('../fonts/LexiSaebomR.eot?#iefix') format('embedded-opentype');
+  src: url('../fonts/LexiSaebomR.woff') format('woff');
+}
+
+// 전체적 분위기 설정 시작 
+$font-color: #CFCFCF;
+$background-color: #262626;
+* {
+  color: $font-color;
+  font-weight: 100;
+}
+
+a, a:visited {
+  color: #19BDCF;
+}
+
+a:hover, a:focus {
+  color: #276C8B;
+  text-decoration: blink;
+}
+
+body {
+  background-color: $background-color;
+}
+
+p {
+  word-break: break-all;
+}
+
+.yellow {
+  color: #f2f45f;
+}
+
+.hidden-scroll {
+  opacity: 0;
+}
+
+.visible-scroll {
+  opacity: 1;
+}
+
+.fb-like {
+  display: block;
+  float: right;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+th, td {
+  border-color: $background-color + #222 !important;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  width: 30px;
+  height: 30px;
+}
+// 전체적 분위기 설정 끝 
+
+// 네비게이션 바 시작 
+nav {
+  -moz-animation-name: drop-header;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-timing-function: ease-in-out;
+  -moz-animation-duration: 0.3s;
+
+  -webkit-animation-name: drop-header;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-duration: 0.3s;
+
+  animation-name: drop-header;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-duration: 0.3s;
+  * {
+    font-family: $header-footer !important;
+  }
+}
+// 네비게이션 바 끝 
+
+.container {
+  section:nth-child(n+2) {
+    box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1), 0 0 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    background-color: #333;
+    border-radius: 3px;
+    padding: 9px 23px;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+}
+
+.description, .description *, #subtitle, #subtitle * {
+  font-size: 19px;
+  font-family: $contents;
+}
+
+#container-content ul li:before {
+  content: "–";
+  position: absolute;
+  margin-left: -1.1em;
+}
+
+.name {
+  display: inline-block;
+  font-family: $section-title;
+  font-size: 60px;
+  color: $font-color - #444;
+  margin-top: 5px;
+}
+
+.icon {
+  width: 130px;
+  float: right;
+  position: absolute;
+  z-index: 1;
+}
+
+.description {
+  margin-left: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .description {
+    margin-right: 200px;
+  }
+}
+
+section {
+  overflow: auto;
+  position: relative;
+}
+
+[id^="section-"] {
+  .icon {
+    right: 22px;
+    bottom: 20px;    
+  }
+}
+
+#section-about {
+  .descrition {
+    margin-top: 16px;
+  }
+}
+
+#section-award {
+}
+
+#section-project {
+}
+// Project 섹션 끝 
+
+// Game 섹션 시작 
+#section-game {
+  .description {
+    margin-top: 16px;
+  }
+}
+
+#section-logo {
+  height: 768px;
+  #logo {
+    padding-top: 150px;
+  }
+}
+
+// 모바일에서 공백이 너무 많이 출력되는 현상 수정  
+@media screen and (max-width: 767px) {
+  #section-logo {
+    height: 500px;
+    #logo {
+      padding-top: 75px;
+    }
+  }
+}
+
+#section-logo #logo #subtitle {
+  padding-top: 60px;
+  padding-right: 3%;
+  padding-left: 25%;
+  font-size: 19px;
+  float: right;
+}
+
+#footer {
+  font-family: $header-footer;
+  width: 100%;
+  min-height: 60px;
+  background-color: $background-color + #050505;
+  .text-muted {
+    margin: 20px 0;
+  }
+}
+
+// 애니메이션 키 프레임 시작
+@-moz-keyframes drop-header {
+  0% { -moz-transform: translateY(-50px); }
+  100% { -moz-transform: translateY(0); }
+}
+@-webkit-keyframes drop-header {
+  0% { -webkit-transform: translateY(-50px); }
+  100% { -webkit-transform: translateY(0); }
+}
+@keyframes drop-header {
+  0% { transform: translateY(-50px); }
+  100% { transform: translateY(0); }
+}
+// 애니메이션 키 프레임 끝
+
+// 팝업 시작
+@media screen and (min-width: 767px) {
+  .modal .modal-dialog {
+    width: 90%;
+  }
+}
+
+.modal {
+  .modal-body {
+    overflow-y: auto;
+    max-width: 1100px;
+    margin: 0 auto;
+    * {
+      font-size: 18px;
+      margin: 0 auto;
+      margin-bottom: 15px;
+    }
+  }
+  
+  .modal-title {
+    font-family: $section-title;
+  }
+
+  .modal-content {
+    background-color: $background-color;
+    * {
+      color: $font-color;
+      font-family: $contents;
+    }
+    
+    img {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      background: initial;
+      &.img-thumbnail {
+        border-color: $background-color + #444;
+      }
+    }
+  }
+
+  .modal-header {
+    border-bottom-color: #444;
+  }
+  
+  .description-title {
+    font-family: $section-title;
+    font-size: 60px;
+    color: #888;
+    margin-top: 5px;
+    margin-bottom: 30px;
+  }
+}
+
+// 출처: http://embedresponsively.com/
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+}
+
+.embed-container iframe, 
+.embed-container object, 
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+// 팝업 끝
+
+// 로딩 애니메이션 시작
+#loading {
+  width: 50px;
+  height: 50px;
+  border: 3px solid rgba(100, 100, 100, 0.3);
+  margin: 50px auto;
+  border-radius: 50%;
+  border-top-color: #fff;
+  animation: spin 1s ease-in-out infinite;
+  -webkit-animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to { -webkit-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+  to { -webkit-transform: rotate(360deg); }
+}
+// 로딩 애니메이션 끝
