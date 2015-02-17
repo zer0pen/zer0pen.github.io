@@ -189,6 +189,11 @@ section {
   font-family: "Maven Pro", "맑은 고딕", "Malgun Gothic", sans-serif; }
 .modal .modal-content {
   background-color: #262626; }
+  .modal .modal-content .center {
+    text-align: center;
+    display: block; }
+  .modal .modal-content td:first-child {
+    width: 150px; }
   .modal .modal-content * {
     color: #CFCFCF;
     font-family: "Noticia Text", "Lora", serif; }

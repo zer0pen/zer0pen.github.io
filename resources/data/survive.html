@@ -1,0 +1,191 @@
+<h2 class="description-title">Survive!!</h2>
+<ol>
+  <li>제작 과정</li>
+  <table class="table table-condensed">
+    <thead>
+      <tr>
+        <th>날짜</th>
+        <th>개발 계획</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>2013-01-19</td>
+        <td>제로픈 엔진 제작</td>
+      </tr>
+      <tr>
+        <td>2013-06-22</td>
+        <td>캐릭터 인공지능 구현 (유한 상태 기계)</td>
+      </tr>
+      <tr>
+        <td>2013-06-25</td>
+        <td>인터넷 싹싹 뒤져 동물들 행동 습성 정리</td>
+      </tr>
+      <tr>
+        <td>2013-06-28</td>
+        <td>퍼지 논리를 이용한 몬스터 두뇌 구현</td>
+      </tr>
+      <tr>
+        <td>2013-06-30</td>
+        <td>동물들 구현 (닭, 돼지, 토끼, 멧돼지, 늑대 등)</td>
+      </tr>
+      <tr>
+        <td>2013-07-02</td>
+        <td>캐릭터 공격, 스킬 구현</td>
+      </tr>
+      <tr>
+        <td>2013-07-05</td>
+        <td>맵 에디터 구현 및 오토 타일링 구현</td>
+      </tr>
+      <tr>
+        <td>2013-07-06</td>
+        <td>팀원 박성원 영입 및 강제 노역</td>
+      </tr>
+      <tr>
+        <td>2013-07-07</td>
+        <td>Scene을 옮길 때 셰이더 트랜지션 (Fade 효과) 구현</td>
+      </tr>
+      <tr>
+        <td>2013-07-12</td>
+        <td>공간 분할 시스템으로 인한 50000 X 50000 형태의 월드맵 구현 및 수천마리의 동물 생성</td>
+      </tr>
+      <tr>
+        <td>2013-07-13</td>
+        <td>캐릭터의 세세한 능력치 구현 (공격력,방어력, 공격속도, 이동속도, 체력 젠, 마나 젠, 공복도 등)</td>
+      </tr>
+      <tr>
+        <td>2013-07-14</td>
+        <td>월드에 나무와 모닥불 랜덤 배치</td>
+      </tr>
+      <tr>
+        <td>2013-07-18</td>
+        <td>숙련도 시스템 도입 및 레벨 시스템과 능력치 시스템 구현</td>
+      </tr>
+      <tr>
+        <td>2013-07-20</td>
+        <td>모닥불 버프 효과 구현 라이트 파티클 구현</td>
+      </tr>
+      <tr>
+        <td>2013-07-21</td>
+        <td>인벤토리와 아이템 기능 구현</td>
+      </tr>
+      <tr>
+        <td>2013-08-03</td>
+        <td>몬스터 어그로 시스템과 자동 정찰 인공지능 구현, 몬스터에게 생각하는 두뇌 심기</td>
+      </tr>
+      <tr>
+        <td>2013-08-04</td>
+        <td>음식을 구워 먹는 기능 구현</td>
+      </tr>
+      <tr>
+        <td>2013-08-07</td>
+        <td>인벤토리 아이템 중첩, 이동, 버리기 기능 구현</td>
+      </tr>
+      <tr>
+        <td>2013-08-12</td>
+        <td>아이템 설명 창 구현</td>
+      </tr>
+      <tr>
+        <td>2013-08-14</td>
+        <td>메인 화면 구성 및 Blur 셰이더 구현</td>
+      </tr>
+      <tr>
+        <td>2013-08-22</td>
+        <td>Credit 화면 구현, 게임중 일시정지 기능 구현</td>
+      </tr>
+      <tr>
+        <td>2013-08-25</td>
+        <td>밸런스 수정 및 최종 점검</td>
+      </tr>
+    </tbody>
+  </table>
+  <li>메인 메뉴</li>
+  <p>
+    <img src="./resources/images/games/2013/survive/01.png" class="img-responsive img-thumbnail center-block">
+    프로그램을 시작하면 제일 처음에 귀여운 닭과 늑대가 나온 후, 제로픈 로고를 보여준 후에 위와 같은 메인 화면이 뜨게 됩니다. Survive !! 라는 타이틀과 함께 세 개의 버튼이 있으며, 각각 게임시작, 게임정보, 게임끝내기 버튼입니다. 뒷 배경은 게임월드에 존재하는 캐릭터와 NPC, 나무, 그리고 몬스터들이 방황하고 있으며 Blur Shader 처리시켜 메인 메뉴에 보다 집중시키게 만들었습니다.
+  </p>
+  <li>게임 정보</li>
+  <p>
+    <img src="./resources/images/games/2013/survive/02.png" class="img-responsive img-thumbnail center-block">
+    메인 메뉴에서 게임정보 버튼을 누르면 다음과 같이 개발자 정보와 저작권, 음원과 폰트 출처에 대하여 설명합니다.
+  </p>
+  <li>게임 화면</li>
+  <p>
+    <img src="./resources/images/games/2013/survive/03.png" class="img-responsive img-thumbnail center-block">
+    <b>캐릭터</b> : 유저가 조종할 플레이어입니다. WASD 조작키로 이동할 수 있으며 왼쪽, 오른쪽 마우스로 동물들을 공격할 수 있습니다. E로 아이템을 줍기, 마우스로 아이템 먹기, 버리기 등 다양한 조작을 할 수 있습니다.
+    <br />
+    <br />
+    <b>상태창</b> : 캐릭터의 HP, MP, 공복도 수치를 알려주며 레벨과 게임 경과 시간도 표시해 줍니다. HP나 공복도가 일정 수치 이하로 떨어질 경우 게임창 화면이 어둑어둑해져 캐릭터의 상태가 불안정하다는 것을 인지시켜줍니다.
+    <br />
+    <br />
+    <b>스탯창</b> : 동물을 사냥하거나 나무를 잘라서 얻은 숙련도(경험치)를 능력치를 올리는 데에 사용할 수 있습니다. 능력치는 5가지로 나뉘며 공격력, 공격속도, 이동속도, 방어력, HP, MP 등 캐릭터의 다양한 수치에 영향을 줍니다. 능력치를 많이 올려 레벨을 상승시켜 더욱 강력한 동물들을 사냥할 수 있습니다.
+    <br />
+    <br />
+    <b>인벤토리</b> : 동물들을 사냥하여 얻은 고기들이나 나무를 잘라 얻은 장작을 보관하는 인벤토리입니다. 배고플 때 고기를 먹거나 모닥불에 구워 먹을 수 있습니다. 장작을 모닥불에 넣으면 모닥불의 불씨가 살아납니다.
+    <br />
+    <br />
+    <b>퀘스트</b> : 50000 X 50000 의 광활한 월드에는 3명의 친구들이 길을 잃어 헤메고 있습니다. 그들을 찾아서 원하는 것을 해주어 도와줍시다. 3명의 친구 모두를 구출해주면 게임 엔딩을 볼 수 있습니다.
+  </p>
+  <li>게임 기능</li>
+  <p>
+    본 게임은 생존을 기반으로 월드를 헤쳐나가며 동물들에게서 고기를 구해 친구들을 도와주는 게임입니다. 오랫동안 생존하면서 캐릭터의 능력을 키워 보다 강력한 동물들을 무찌르는게 키포인트입니다.
+    <br />
+    <img src="./resources/images/games/2013/survive/04.png" class="img-responsive img-thumbnail center-block">
+    <span class="center">1. 닭을 만났습니다.</span>
+    <img src="./resources/images/games/2013/survive/05.png" class="img-responsive img-thumbnail center-block">
+    <span class="center">2. 다가가자 닭이 도망을 칩니다.</span>
+    <img src="./resources/images/games/2013/survive/06.png" class="img-responsive img-thumbnail center-block">
+    <span class="center">3. 깔끔하게 잡아버립시다. 어차피 다시 리스폰됩니다.</span>
+    <img src="./resources/images/games/2013/survive/07.png" class="img-responsive img-thumbnail center-block">
+    <span class="center">4. 고기를 획득합니다.</span>
+    <img src="./resources/images/games/2013/survive/08.png" class="img-responsive img-thumbnail center-block">
+    <span class="center">5. 아이템 정보를 확인합니다.</span>
+    <img src="./resources/images/games/2013/survive/09.png" class="img-responsive img-thumbnail center-block">
+    <span class="center">6. 생고기를 잘못 먹으면 큰일이 날 수도 있습니다!</span>
+    <img src="./resources/images/games/2013/survive/10.png" class="img-responsive img-thumbnail center-block">
+    <span class="center">7. 모닥불에 불이 꺼져 있습니다.</span>
+    <img src="./resources/images/games/2013/survive/11.png" class="img-responsive img-thumbnail center-block">
+    <span class="center">8. 이럴 땐 모닥불에 불을 지핍니다.</span>
+    <img src="./resources/images/games/2013/survive/12.png" class="img-responsive img-thumbnail center-block">
+    <span class="center">9. 모닥불 근처에 있으면 체력, 마나 회복 버프를 받게 됩니다.</span>
+    <img src="./resources/images/games/2013/survive/13.png" class="img-responsive img-thumbnail center-block">
+    <span class="center">10. 모닥불에 아까 얻었던 고기를 구워 봅시다.</span>
+    <img src="./resources/images/games/2013/survive/14.png" class="img-responsive img-thumbnail center-block">
+    <span class="center">11. 모닥불을 때려 불을 더 빨리 끌 수도 있습니다. 이 때 모닥불에서는 불똥이 순간적으로 더 크게 튑니다.</span>
+    Survive !! 게임에는 먹이사슬 개념이 존재합니다. 예를 들어 늑대와 멧돼지가 서로 대면하면, 멧돼지가 더욱 강력하기 때문에 늑대는 꽁무늬를 빼게 됩니다. 만약 늑대와 돼지가 만나면 당연히 돼지는 저녁식사거리가 되겠죠? 하지만 언제나 현실에는 예외도 있다는 것을 간과해선 안됩니다.
+    <img src="./resources/images/games/2013/survive/15.png" class="img-responsive img-thumbnail center-block">
+    <span class="center">12. 늑대들의 식사거리가 되어 가고 있는 불쌍한 돼지. 자칫하다간 캐릭터도 식사거리가 될 수도 있습니다.</span>
+    <img src="./resources/images/games/2013/survive/16.png" class="img-responsive img-thumbnail center-block">
+    <span class="center">13. 멧돼지에게 쫓겨 도망가고 있는 늑대</span>
+    Survive!! 의 모든 공격시스템은 논타겟팅으로 이루어져 있습니다. 그래서 몬스터가 캐릭터의 공격을 피하거나, 반대로 캐릭터가 몬스터의 공격을 피하며 반격할 수도 있습니다.
+    <img src="./resources/images/games/2013/survive/17.png" class="img-responsive img-thumbnail center-block">
+    <span class="center">14. 멧돼지가 캐릭터를 향해 돌진해오고 있습니다. 하지만 캐릭터는 컨트롤로 회피! 화면이 어두운 건 배고파서 정신을 잃어가는 상황에 처한 것입니다.</span>
+    <img src="./resources/images/games/2013/survive/18.png" class="img-responsive img-thumbnail center-block">
+    <span class="center">15. 멧돼지를 흠씬 두들겨 패 주었더니 잽싸게 꽁무늬룰 뺍니다.</span>
+    <img src="./resources/images/games/2013/survive/19.png" class="img-responsive img-thumbnail center-block">
+    <span class="center">16. 멧돼지에게 마무리 일격을 날리려는 순간 늑대가 쏜살같이 날라와서 다 죽어가는 멧돼지를 잡아먹으려 합니다! 원래대로라면 늑대가 도망가야 하지만, 멧돼지가 정상 상태가 아닌 것을 늑대가 알아챘나 봅니다.</span>
+    원래 먹이사슬로 따지면, 늑대보다 멧돼지가 더 높은 층에 있지만 동물들의 상태에 고려하여 상황도 달라지게 됩니다. 또한, 전투 중 체력이 없을 때 도망가는 멧돼지가 있는가 하면 죽을 때 까지 전투에 최선을 다하는 멧돼지도 있습니다. 각각의 동물마다 성향도 다릅니다.
+    <img src="./resources/images/games/2013/survive/20.png" class="img-responsive img-thumbnail center-block">
+    <span class="center">17. 어라, 비가 오기 시작합니다.</span>
+    월드에 비가 오기 시작합니다. [Survive!!] 월드에서 자연환경 하나하나가 월드에 영향을 미칩니다. 예를 들어, 비가 오면 모닥불이 빨리 꺼져버려 휴식을 취하거나 고기를 굽기 힘들어집니다.
+    <img src="./resources/images/games/2013/survive/21.png" class="img-responsive img-thumbnail center-block">
+    <span class="center">18. 깜짝이야! 비가 오는 도중, 갑자기 천둥번개가 칩니다! 아슬아슬합니다.</span>
+    다행히도, 주인공이 번개에 맞지는 않았습니다. 번개는 월드에 다양한 영향을 끼칩니다. 주인공이 맞으면 죽을 수도 있는 악영향을 끼치기도 하지만, 동물이 맞으면 고기라는 전리품으로 변하기도 하고, 모닥불에 맞으면 불씨가 살아나기도 합니다!
+    <img src="./resources/images/games/2013/survive/22.png" class="img-responsive img-thumbnail center-block">
+    <span class="center">19. 어라, 닭의 형태가 약간 다릅니다. 모자를 쓰고 있습니다.</span>
+    다가오는 성탄절을 위하여 산타 닭님은 우리 [Survive!!] 월드 친구들에게 선물을 주고 싶어 직접 몸을 움직이셨다고 합니다.
+    <img src="./resources/images/games/2013/survive/23.png" class="img-responsive img-thumbnail center-block">
+    <span class="center">20. 역시나 많은 것을 남기고 가시는 우리 산타 닭님입니다. 그는 푸짐하였습니다.</span>
+    <img src="./resources/images/games/2013/survive/24.png" class="img-responsive img-thumbnail center-block">
+    <span class="center">21. 북쪽으로 탐험하던 도중, 갑자기 눈이 쌓여있는 곳을 발견하였습니다. 새로운 지형일까요?</span>
+    북쪽으로 가다보면, 얼음 지형을 접하게 됩니다. 이 곳은 북극입니다. 다른 곳보다 춥고 미끄러워 특히나 무서운 장소입니다! 북극에서는 허기도 더 빨리 지고, 모닥불에 불도 잘 안 붙기 때문에 만반의 준비를 하고 가시는 것을 추천합니다. 
+    <img src="./resources/images/games/2013/survive/25.png" class="img-responsive img-thumbnail center-block">
+    <span class="center">22. 아름다운 눈을 감상해 봅시다.</span>
+    자, 이제 그만 북극에서 나와 친구들을 도와줍시다.
+    <img src="./resources/images/games/2013/survive/26.png" class="img-responsive img-thumbnail center-block">
+    <span class="center">23. 월드를 탐험하던 도중, 통통이를 만났습니다.</span>
+    만약 캐릭터가 월드에 존재하는 3명의 친구들을 모두 도와주게 된다면 게임의 엔딩이 나오고 끝이 나게 됩니다.
+    <img src="./resources/images/games/2013/survive/27.png" class="img-responsive img-thumbnail center-block">
+    <span class="center">24. 친구들을 모두 도와 월드를 탈출해 나가는 과정입니다.</span>
+  </p>
+</ol>

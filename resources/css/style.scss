@@ -258,6 +258,16 @@ section {
 
   .modal-content {
     background-color: $background-color;
+    
+    .center {
+      text-align: center;
+      display: block;
+    }
+    
+    td:first-child {
+      width: 150px;
+    }
+    
     * {
       color: $font-color;
       font-family: $contents;
