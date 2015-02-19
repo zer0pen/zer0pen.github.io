@@ -98,6 +98,9 @@ nav {
   * {
     font-family: $header-footer !important;
   }
+  .navbar-brand img {
+    height: 20px;
+  }
 }
 // 네비게이션 바 끝 
 

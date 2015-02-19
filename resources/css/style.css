@@ -70,6 +70,8 @@ nav {
   animation-duration: 0.3s; }
   nav * {
     font-family: "Open Sans", "맑은 고딕", "Malgun Gothic", "나눔고딕", "NanumGothic", "AppleSDGothic", sans-serif !important; }
+  nav .navbar-brand img {
+    height: 20px; }
 
 .container section:nth-child(n+2) {
   box-shadow: 0 2px 1px rgba(0, 0, 0, 0.1), 0 0 1px rgba(0, 0, 0, 0.1);
