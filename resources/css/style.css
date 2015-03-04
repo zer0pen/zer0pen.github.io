@@ -1,13 +1,7 @@
-@import url('http://fonts.googleapis.com/css?family=Maven+Pro|Open+Sans|Noticia+Text:400,700');
-@font-face {
-  font-family: "Lora";
-  src: url('../fonts/LexiSaebomR.eot');
-  src: url('../fonts/LexiSaebomR.eot?#iefix') format('embedded-opentype');
-  src: url('../fonts/LexiSaebomR.woff') format('woff'); }
-
+@import url('http://fonts.googleapis.com/css?family=Maven+Pro|Open+Sans');
+@import url('http://api.typolink.co.kr/css?family=RixSGo+L:400');
 * {
-  color: #CFCFCF;
-  font-weight: 100; }
+  color: #CFCFCF; }
 
 a, a:visited {
   color: #19BDCF; }
@@ -69,7 +63,7 @@ nav {
   animation-timing-function: ease-in-out;
   animation-duration: 0.3s; }
   nav * {
-    font-family: "Open Sans", "맑은 고딕", "Malgun Gothic", "나눔고딕", "NanumGothic", "AppleSDGothic", sans-serif !important; }
+    font-family: "Open Sans", "RixSGo L", "맑은 고딕", "Malgun Gothic", "나눔고딕", "NanumGothic", "AppleSDGothic", sans-serif !important; }
   nav .navbar-brand img {
     height: 20px; }
 
@@ -80,11 +74,12 @@ nav {
   border-radius: 3px;
   padding: 9px 23px; }
 .container ul {
-  list-style-type: none; }
+  list-style-type: none;
+  padding-left: 25px; }
 
 .description, .description *, #subtitle, #subtitle * {
-  font-size: 19px;
-  font-family: "Noticia Text", "Lora", serif; }
+  font-size: 18px;
+  font-family: "Open Sans", "RixSGo L", "Lora", "맑은 고딕", "Malgun Gothic", "나눔고딕", "NanumGothic", "AppleSDGothic", sans-serif; }
 
 #content ul li:before {
   content: "–";
@@ -93,7 +88,7 @@ nav {
 
 .name {
   display: inline-block;
-  font-family: "Maven Pro", "맑은 고딕", "Malgun Gothic", sans-serif;
+  font-family: "Open Sans", "Maven Pro", "RixSGo L", "맑은 고딕", "Malgun Gothic", sans-serif;
   font-size: 60px;
   color: #8b8b8b;
   margin-top: 5px; }
@@ -146,7 +141,7 @@ section {
   float: right; }
 
 #footer {
-  font-family: "Open Sans", "맑은 고딕", "Malgun Gothic", "나눔고딕", "NanumGothic", "AppleSDGothic", sans-serif;
+  font-family: "Open Sans", "RixSGo L", "맑은 고딕", "Malgun Gothic", "나눔고딕", "NanumGothic", "AppleSDGothic", sans-serif;
   width: 100%;
   min-height: 60px;
   background-color: #2b2b2b; }
@@ -181,14 +176,14 @@ section {
 
 .modal .modal-body {
   overflow-y: auto;
-  max-width: 1100px;
+  max-width: 900px;
   margin: 0 auto; }
   .modal .modal-body * {
     font-size: 18px;
     margin: 0 auto;
     margin-bottom: 15px; }
 .modal .modal-title {
-  font-family: "Maven Pro", "맑은 고딕", "Malgun Gothic", sans-serif; }
+  font-family: "Open Sans", "Maven Pro", "RixSGo L", "맑은 고딕", "Malgun Gothic", sans-serif; }
 .modal .modal-content {
   background-color: #262626; }
   .modal .modal-content .center {
@@ -198,7 +193,9 @@ section {
     width: 150px; }
   .modal .modal-content * {
     color: #CFCFCF;
-    font-family: "Noticia Text", "Lora", serif; }
+    font-family: "Open Sans", "RixSGo L", "Lora", "맑은 고딕", "Malgun Gothic", "나눔고딕", "NanumGothic", "AppleSDGothic", sans-serif; }
+  .modal .modal-content ol {
+    padding-left: 30px; }
   .modal .modal-content img {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -208,7 +205,7 @@ section {
 .modal .modal-header {
   border-bottom-color: #444; }
 .modal .description-title {
-  font-family: "Maven Pro", "맑은 고딕", "Malgun Gothic", sans-serif;
+  font-family: "Open Sans", "Maven Pro", "RixSGo L", "맑은 고딕", "Malgun Gothic", sans-serif;
   font-size: 60px;
   color: #888;
   margin-top: 5px;

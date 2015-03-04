@@ -1,22 +1,15 @@
-@import url('http://fonts.googleapis.com/css?family=Maven+Pro|Open+Sans|Noticia+Text:400,700');
+@import url('http://fonts.googleapis.com/css?family=Maven+Pro|Open+Sans');
+@import url('http://api.typolink.co.kr/css?family=RixSGo+L:400');
 
-$header-footer: "Open Sans", "맑은 고딕", "Malgun Gothic", "나눔고딕", "NanumGothic", "AppleSDGothic", sans-serif;
-$contents: "Noticia Text", "Lora", serif;
-$section-title: "Maven Pro", "맑은 고딕", "Malgun Gothic", sans-serif;
-
-@font-face {
-  font-family: "Lora";
-  src: url('../fonts/LexiSaebomR.eot');
-  src: url('../fonts/LexiSaebomR.eot?#iefix') format('embedded-opentype');
-  src: url('../fonts/LexiSaebomR.woff') format('woff');
-}
+$header-footer: "Open Sans", "RixSGo L", "맑은 고딕", "Malgun Gothic", "나눔고딕", "NanumGothic", "AppleSDGothic", sans-serif;
+$contents: "Open Sans", "RixSGo L", "Lora", "맑은 고딕", "Malgun Gothic", "나눔고딕", "NanumGothic", "AppleSDGothic", sans-serif;
+$section-title: "Open Sans", "Maven Pro", "RixSGo L", "맑은 고딕", "Malgun Gothic", sans-serif;
 
 // 전체적 분위기 설정 시작 
 $font-color: #CFCFCF;
 $background-color: #262626;
 * {
   color: $font-color;
-  font-weight: 100;
 }
 
 a, a:visited {
@@ -115,11 +108,12 @@ nav {
   
   ul {
     list-style-type: none;
+    padding-left: 25px;
   }
 }
 
 .description, .description *, #subtitle, #subtitle * {
-  font-size: 19px;
+  font-size: 18px;
   font-family: $contents;
 }
 
@@ -246,7 +240,7 @@ section {
 .modal {
   .modal-body {
     overflow-y: auto;
-    max-width: 1100px;
+    max-width: 900px;
     margin: 0 auto;
     * {
       font-size: 18px;
@@ -274,6 +268,10 @@ section {
     * {
       color: $font-color;
       font-family: $contents;
+    }
+    
+    ol {
+      padding-left: 30px;
     }
     
     img {
