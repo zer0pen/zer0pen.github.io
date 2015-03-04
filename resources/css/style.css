@@ -3,6 +3,9 @@
 * {
   color: #CFCFCF; }
 
+body {
+  margin-top: 70px; }
+
 a, a:visited {
   color: #19BDCF; }
 
@@ -73,7 +76,7 @@ nav {
   background-color: #333;
   border-radius: 3px;
   padding: 9px 23px; }
-.container ul {
+.container .post-content ul {
   list-style-type: none;
   padding-left: 25px; }
 

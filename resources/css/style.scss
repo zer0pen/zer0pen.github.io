@@ -12,6 +12,10 @@ $background-color: #262626;
   color: $font-color;
 }
 
+body {
+  margin-top: 70px;
+}
+
 a, a:visited {
   color: #19BDCF;
 }
@@ -106,7 +110,7 @@ nav {
     padding: 9px 23px;
   }
   
-  ul {
+  .post-content ul {
     list-style-type: none;
     padding-left: 25px;
   }
