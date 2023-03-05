@@ -136,7 +136,7 @@ const List = () => {
             <CardForm>
               <CardTitle>
                 신입생 환영회
-                <Emoji role="img" aira-label="신입생 환영회">
+                <Emoji role="img" aira-label="신입생 환영회" aria-labelledby="love">
                   👋
                 </Emoji>
               </CardTitle>
@@ -152,7 +152,7 @@ const List = () => {
             <CardForm>
               <CardTitle>
               소프트웨어 나눔 축제
-                <Emoji role="img" aira-label="콘솔 게임 발표회">
+                <Emoji role="img" aira-label="콘솔 게임 발표회" aria-labelledby="love">
                   🕹
                 </Emoji>
               </CardTitle>
@@ -168,7 +168,7 @@ const List = () => {
             <CardForm>
               <CardTitle>
                 일러스트 발표회
-                <Emoji role="img" aira-label="일러스트 발표회">
+                <Emoji role="img" aira-label="일러스트 발표회" aria-labelledby="love">
                   🎨
                 </Emoji>
               </CardTitle>
@@ -183,7 +183,7 @@ const List = () => {
             <CardForm>
               <CardTitle>
               동아리 전시회
-                <Emoji role="img" aira-label="일러스트 발표회">
+                <Emoji role="img" aira-label="일러스트 발표회" aria-labelledby="love">
                   🎉
                 </Emoji>
               </CardTitle>
@@ -199,7 +199,7 @@ const List = () => {
             <CardForm>
               <CardTitle>
                 여름 방학 프로젝트
-                <Emoji role="img" aira-label="여름 방학 프로젝트">
+                <Emoji role="img" aira-label="여름 방학 프로젝트" aria-labelledby="love">
                   🔥
                 </Emoji>
               </CardTitle>
@@ -214,7 +214,7 @@ const List = () => {
             <CardForm>
               <CardTitle>
                 제로픈 송년회
-                <Emoji role="img" aira-label="제로픈 송년회">
+                <Emoji role="img" aira-label="제로픈 송년회" aria-labelledby="love">
                   🔥
                 </Emoji>
               </CardTitle>

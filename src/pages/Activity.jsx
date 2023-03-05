@@ -109,7 +109,7 @@ const Activity = () => {
           <Box>
             <BoxTitle>
               게임 개발
-              <Emoji role="img" aria-label="game">
+              <Emoji role="img" aria-label="game" aria-labelledby="love">
                 🕹
               </Emoji>
             </BoxTitle>
@@ -122,7 +122,7 @@ const Activity = () => {
           <Box>
             <BoxTitle>
               게임 디자인
-              <Emoji role="img" aria-label="design">
+              <Emoji role="img" aria-label="design" aria-labelledby="love">
                 🎨
               </Emoji>
             </BoxTitle>
@@ -135,7 +135,7 @@ const Activity = () => {
           <Box>
             <BoxTitle>
               게임 기획
-              <Emoji role="img" aria-label="plannig">
+              <Emoji role="img" aria-label="plannig" aria-labelledby="love">
                 📚
               </Emoji>
             </BoxTitle>

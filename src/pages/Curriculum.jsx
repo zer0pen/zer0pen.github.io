@@ -1,6 +1,6 @@
 import React from "react";
 import styled, { css } from "styled-components";
-import { desktop, mobile } from "../libs/viewport";
+import { mobile } from "../libs/viewport";
 //import homework from "../assets/homework.jpg";
 
 const Wrap = styled.div`
@@ -99,13 +99,13 @@ const CurriDetail = styled.div`
   color: #6F6E6A;
   margin-bottom:3px;
 `;
-const Video = styled.video`
-  width: 830px;
+// const Video = styled.video`
+//   width: 830px;
   
-  ${desktop(css`
-    display: none;
-  `)}
-`;
+//   ${desktop(css`
+//     display: none;
+//   `)}
+// `;
 const Space = styled.div`
   height: 100px;
   ${mobile(css`

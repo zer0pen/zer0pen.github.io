@@ -16,7 +16,7 @@
   "scripts": {
     "start": "DISABLE_ESLINT_PLUGIN=true react-scripts start",
     "build": "DISABLE_ESLINT_PLUGIN=true react-scripts build",
-    "deploy": "gh-pages -d build",
+    "deploy": "DISABLE_ESLINT_PLUGIN=true gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
