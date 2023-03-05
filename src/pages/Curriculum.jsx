@@ -2,7 +2,6 @@ import React from "react";
 import styled, { css } from "styled-components";
 import { desktop, mobile } from "../libs/viewport";
 //import homework from "../assets/homework.jpg";
-import v from "../assets/Zer0pen시연영상.mp4";
 
 const Wrap = styled.div`
   padding: 8% 5%;
